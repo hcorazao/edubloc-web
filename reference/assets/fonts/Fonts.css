@@ -1,0 +1,54 @@
+/* Hindi */
+@font-face
+{
+	fontFamily: "Adobe Devanagari";
+	src: url("assets/fonts/AdobeDevanagari-Regular.otf");
+	fontWeight: normal;
+	fontStyle: normal;
+	embedAsCFF: false;
+}
+@font-face
+{
+	fontFamily: "Adobe Devanagari";
+	src: url("assets/fonts/AdobeDevanagari-Bold.otf");
+	fontWeight: bold;
+	fontStyle: normal;
+	embedAsCFF: true;
+}
+/* Arabic */
+@font-face
+{
+	fontFamily: "Arabic";
+	src: url("assets/fonts/AdobeArabic-Regular.otf");
+	fontWeight: normal;
+	fontStyle: normal;
+	embedAsCFF: false;
+}
+@font-face
+{
+	fontFamily: "Arabic";
+	src: url("assets/fonts/AdobeArabic-Bold.otf");
+	fontWeight: bold;
+	fontStyle: normal;
+	embedAsCFF: false;
+}
+/* Japanese */
+
+@font-face
+{
+	fontFamily: "Noto Sans JP";
+	src: url("assets/fonts/NotoSansJP-Regular.otf");
+	fontWeight: normal;
+	fontStyle: normal;
+	embedAsCFF: true;
+}
+
+
+@font-face
+{
+	fontFamily: "Noto Sans JP";
+	src: url("assets/fonts/NotoSansJP-Bold.otf");
+	fontWeight: bold;
+	fontStyle: normal;
+	embedAsCFF: true;
+}

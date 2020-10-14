@@ -1,0 +1,29 @@
+$white: #ffffff;
+$Accent-blue: #175FFf;
+$Logo-gradient: linear-gradient(226.27deg, #EAA675 0%, #EA7D75 100%);
+body {
+    background: $white;
+    justify-content: space-between;
+}
+
+.rectangle-109-blue {
+    background: $Accent-blue;
+    justify-content: center;
+    align-items: center;
+    background-size: (100% 50%);
+}
+
+.rectangle-109-white {
+    background: $white;
+}
+
+.logo-signin {
+    height: 239.7px;
+    width: 246.29px;
+}
+
+.logo-name-signin {
+    width: 390px;
+    height: 65.26px;
+    margin: 34.44px 0 0 0;
+}
