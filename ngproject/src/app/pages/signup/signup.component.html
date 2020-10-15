@@ -1,0 +1,58 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col col-signin rectangle-109-blue">
+            <img src="./assets/img/edubloc_name.sgv" class="logo-signin">
+            <img [src]="'/src'" class="logo-name-signin">
+        </div>
+        <div class="col col-signin rectangle-109-white">
+            <div class="sign-up-link">
+                <p>Have an account?
+                    <a class="btn btn-link" [routerLink]="['signin']">Sign In</a></p>
+            </div>
+            <h1>Sign In</h1>
+            <br>
+            <div class="form-row">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary">
+                        <a class="nav-link" routerLinkActive="active">I'm teacher</a>
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                        <a class="nav-link" routerLinkActive="active" [routerLink]="['signup']">I'm parentr</a>
+                    </button>
+                </div>
+            </div>
+            <form>
+                <div class="form-group form-line-bottom">
+                    <label for="Your Full Name">FullName</label>
+                    <input type="text" formControlName="fullname" class="form-control input-lineal" placeholder="e.g. John Doe" />
+                    <div class="invalid-feedback">
+                        <div>Username is required</div>
+                    </div>
+                </div>
+                <div class="form-group form-line-bottom">
+                    <label for="Your Email">Email</label>
+                    <input type="text" formControlName="username" class="form-control input-lineal" placeholder="e.g. examble@mail.com" />
+                    <div class="invalid-feedback">
+                        <div>Username is required</div>
+                    </div>
+                </div>
+                <div class="form-group form-line-bottom">
+                    <label for="password">Password</label>
+                    <input type="password" formControlName="password" class="form-control input-lineal" placeholder="e.g. Aaqwerty124" />
+                    <div class="invalid-feedback">
+                        <div>Password is required</div>
+                    </div>
+                </div>
+                <div class="custom-control custom-checkbox inline-block">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">By registering I accept <a class="btn btn-link">Terms and Condition</a>&<a class="btn btn-link">Privacy Statement</a></label>
+                </div>
+                <div class="form-group align-btn-accent-fiolet">
+                    <button class="btn btn-accent-fiolet">
+                        Sign In
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

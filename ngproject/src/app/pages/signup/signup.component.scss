@@ -1,0 +1,71 @@
+$white: #ffffff;
+$Accent-blue: #175FFf;
+$Accent-fiolet: #F6A521;
+$Logo-gradient: linear-gradient(226.27deg, #EAA675 0%, #EA7D75 100%);
+html,
+body {
+    height: 100% margin 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.rectangle-109-blue {
+    background: $Accent-blue;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle-109-white {
+    align-items: center;
+    background: $white;
+    padding: 5% 5% 5% 5%;
+    display: wrap;
+}
+
+.sign-up-link {
+    position: absolute;
+    left: 50%;
+}
+
+.colsinin {
+    padding: 0 0 0 0;
+}
+
+.logo-signin {
+    height: 239.7px;
+    width: 246.29px;
+}
+
+.logo-name-signin {
+    width: 390px;
+    height: 65.26px;
+    margin: 34.44px 0 0 0;
+}
+
+.input-lineal {
+    border: none;
+}
+
+.form-line-bottom {
+    border-bottom: #000000 solid 1px;
+    border-radius: 1PX;
+    object-position: left;
+}
+
+.btn-accent-fiolet {
+    background-color: $Accent-fiolet;
+    color: $white;
+    align-items: left;
+    width: 240px;
+    height: 64px;
+    border-radius: 4px;
+    position: absolute;
+    left: 20%;
+    margin-top: 20px;
+}
+
+.align-btn-accent-fiolet {
+    position: relative;
+}
