@@ -4,44 +4,94 @@ $Accent-fiolet: #F6A521;
 $Logo-gradient: linear-gradient(226.27deg, #EAA675 0%, #EA7D75 100%);
 html,
 body {
-    height: 100% margin 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
 }
 
-a {
-    text-decoration: none;
+div.col.rectangle-109-blue {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-content: center;
 }
 
 .rectangle-109-blue {
     background: $Accent-blue;
+    display: flex;
     justify-content: center;
+    vertical-align: middle;
+    align-content: center;
     align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    margin: 0 0 0 0;
+}
+
+div.row.logos-styles-align {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-content: center;
 }
 
 .rectangle-109-white {
-    align-items: center;
     background: $white;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 5% 5% 5% 5%;
-    display: wrap;
+    height: 100vh;
+    width: 100vw;
 }
 
-.sign-up-link {
-    position: absolute;
-    left: 50%;
+// go to the link on the top *********************************************************
+div.row.row-go-to-the-link {
+    display: flex;
+    justify-content: flex-end;
+    vertical-align: middle;
+    align-content: flex-end;
+    align-items: center;
 }
 
-.colsinin {
-    padding: 0 0 0 0;
+div.con-go-to-the-link {
+    text-align: center;
 }
 
+a.btn.btn-link {
+    padding: 0 16 0 0;
+}
+
+// logo **************************************************
 .logo-signin {
     height: 239.7px;
     width: 246.29px;
 }
 
-.logo-name-signin {
-    width: 390px;
+img.logo-name-signin {
     height: 65.26px;
     margin: 34.44px 0 0 0;
+}
+
+// form ********************************************************************
+div.row.form-align-styles {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-content: center;
+    align-items: center;
+}
+
+.btn-choose-role {
+    width: 130%;
+    text-align: center;
 }
 
 .input-lineal {
@@ -54,16 +104,30 @@ a {
     object-position: left;
 }
 
+// check box and privacy statement ******************************************
+div.custom-control.custom-chec-kbox.checbox-styles {
+    display: flex;
+    font-size: 6px;
+    align-content: flex-end;
+    align-items: center;
+}
+
+a.btn-link.checkbox-link-styles {
+    font-size: 10px;
+    padding: 0 3px 0 3px;
+}
+
+// button fiolet *************************************************************
+div.form-group.align-btn-accent-fiolet {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .btn-accent-fiolet {
     background-color: $Accent-fiolet;
     color: $white;
     align-items: left;
-    width: 240px;
-    height: 64px;
     border-radius: 4px;
-    position: absolute;
-    left: 20%;
-    margin-top: 20px;
 }
 
 .align-btn-accent-fiolet {

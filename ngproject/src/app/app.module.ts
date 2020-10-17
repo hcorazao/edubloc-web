@@ -4,6 +4,9 @@ import { NgModule } from '@angular/core';
 import { APP_ROUTING } from './app.routes';
 // servicios
 
+// font awesome
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 // components
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -35,7 +38,8 @@ import { PastClassComponent } from './components/past-class/past-class.component
   imports: [
     BrowserModule,
     AppRoutingModule,
-    APP_ROUTING
+    APP_ROUTING,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
