@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StudentComponent } from './student.component';
+import { SuperAdminViewStudentComponent } from './super-admin-view-student.component';
 
 describe('StudentComponent', () => {
-  let component: StudentComponent;
-  let fixture: ComponentFixture<StudentComponent>;
+  let component: SuperAdminViewStudentComponent;
+  let fixture: ComponentFixture<SuperAdminViewStudentComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ StudentComponent ]
+      declarations: [ SuperAdminViewStudentComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(StudentComponent);
+    fixture = TestBed.createComponent(SuperAdminViewStudentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
