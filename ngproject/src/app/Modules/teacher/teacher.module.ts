@@ -1,30 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 // Rutas
-import { APP_ROUTING } from './teacher.routes';
+import { TeacherRoutingModule } from './teacher-routing.module';
 // servicios
 
 // font awesome
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 // components
-import { TeacherRoutingModule } from './teacher-routing.module';
-import { TeacherComponent } from './teacher.component';
-import { TeacherViewStudentComponent } from './teacher-view-student/teacher-view-student.component';
 
 
 @NgModule({
-  declarations: [
-    TeacherComponent,
-    TeacherViewStudentComponent
-  ],
+  declarations: [],
   imports: [
+    CommonModule,
     BrowserModule,
     TeacherRoutingModule,
-    APP_ROUTING,
     FontAwesomeModule
   ],
   providers: [],
-  bootstrap: [TeacherComponent]
+  bootstrap: []
 })
 export class TeacherModule { }
