@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
 import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-super-admin-view-student',

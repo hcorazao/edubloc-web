@@ -53,49 +53,18 @@ div.jumbotron.classes-jumbotron {
     justify-content: flex-end;
 }
 
-.btn-deletefromclass {
-    background-color: #F46565;
+.btn-add-class {
+    background-color: #f6a521;
     border: none;
 }
 
-// card user ***********************************************************
-div.card-group.align-items-center {
-    padding: 10px 0 10px 0;
+// tabla clases ***********************************************************
+svg.bi.bi-arrow-right-short {
+    color: $Accent-fiolet;
 }
 
-img.float-left.rounded-circle {
-    width: 50px;
-    margin: 0 10px 0 0;
-}
-
-.img-user-icons {
-    display: flex;
-    width: 50px;
-    padding: 0 10px 0 0;
-    border-radius: 5px;
-}
-
-.item-user-card {
-    display: flex;
-    align-items: center;
-}
-
-button.btn.btn-items-coll {
-    display: flex;
-}
-
-div.card-group.d-flex.usercard-collapse-1 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-}
-
-div.card.usercard-collapse-styles {
-    display: flex;
-}
-
-// card ****************************************************************
-.cards-space-styles {
-    padding: 10px 10px 0 0;
+a.a-view {
+    text-decoration: none;
+    color: $Accent-fiolet;
+    font-weight: normal;
 }

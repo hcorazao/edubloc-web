@@ -1,0 +1,100 @@
+$white: #ffffff;
+$Accent-blue: #175FFf;
+$Accent-fiolet: #F6A521;
+$Logo-gradient: linear-gradient(226.27deg, #EAA675 0%, #EA7D75 100%);
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+//navbar *************************************************************
+.navbar-space-style {
+    display: flex;
+    justify-content: space-around;
+}
+
+// jumbotron classes *************************************************
+div.jumbotron.classes-jumbotron {
+    background-color: #ffffff;
+    height: 76px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 5px 0 5px 0;
+    margin: 0 40px 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container.d-flex.align-items-center {
+    justify-content: space-between;
+    justify-content: center;
+    width: max-content;
+}
+
+div.col.div-col-jumbotron {
+    width: cover;
+}
+
+a.a-jumbotron {
+    text-decoration: none;
+    color: black;
+}
+
+.form-line-bottom {
+    border-bottom: #000000 solid 1px;
+    border-radius: 1PX;
+    object-position: left;
+}
+
+.input-styles-search {
+    border: none;
+}
+
+.btn-jumbotron-import {
+    background-color: #34A853;
+    border: none;
+}
+
+// modal *************************************************************
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-modal-color {
+    background-color: $Accent-fiolet;
+    border: none;
+}
+
+.col-end-div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-add-class {
+    background-color: #f6a521;
+    border: none;
+}
+
+// tabla clases ***********************************************************
+svg.bi.bi-arrow-right-short {
+    color: $Accent-fiolet;
+}
+
+a.a-view {
+    text-decoration: none;
+    color: $Accent-fiolet;
+    font-weight: normal;
+}

@@ -8,10 +8,10 @@
     <div id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" routerLinkActive="active" [routerLink]="['#']">Classrooms</a>
+                <a class="nav-link">Classrooms</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLinkActive="active" [routerLink]="['#']">Student Activities</a>
+                <a class="nav-link">Student Activities</a>
             </li>
         </ul>
     </div>
@@ -19,10 +19,9 @@
     <div id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" routerLinkActive="active" [routerLink]="['#']">Administrator</a>
+                <a class="nav-link">Administrator</a>
             </li>
             <a class="navbar-brand" href="#">
-                <fa-icon [icon]="faSignOutAlt"></fa-icon>
             </a>
         </ul>
     </div>
@@ -34,72 +33,31 @@
             <div class="row">
                 <div class="col">
                     <div class="d-flex">
-                        <div class="dropdown mr-1 d-flex">
-                            <button type="button" class="btn btn-light dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                            Class level
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </div>
-                        <div class="dropdown mr-1 d-flex">
-                            <button type="button" class="btn btn-light dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                            Classroom
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
+                        <div>
+                            <h5>Wang Song</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col col-end-div">
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary right btn-add-class" data-toggle="modal" data-target="#staticBackdrop">
-                        Add new class
+                    <button type="button" class="btn btn-primary right btn-deletefromclass" data-toggle="modal" data-target="#staticBackdrop">
+                        Delete from class
                     </button>
                     <!-- Modal -->
                     <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="staticBackdropLabel">Add new class</h5>
+                                    <h5 class="modal-title" id="staticBackdropLabel">Delete student</h5>
                                 </div>
                                 <div class="modal-body">
-                                    <form>
-                                        <div class="input-group mb-3">
-                                            <div class="input-group-prepend">
-                                                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Class level</button>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="#">Action</a>
-                                                    <a class="dropdown-item" href="#">Another action</a>
-                                                    <a class="dropdown-item" href="#">Something else here</a>
-                                                    <div role="separator" class="dropdown-divider"></div>
-                                                    <a class="dropdown-item" href="#">Separated link</a>
-                                                </div>
-                                            </div>
-                                            <input type="text" aria-label="First name" class="form-control" placeholder="Classroom">
-                                        </div>
-                                        <div class="form-group form-line-bottom ">
-                                            <input type="text " formControlName="fullname " class="form-control input-lineal " placeholder="Teacher full name" />
-                                            <div class="invalid-feedback ">
-                                                <div>Username is required</div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group form-line-bottom ">
-                                            <input type="text " formControlName="username " class="form-control input-lineal " placeholder="Teacher email" />
-                                            <div class="invalid-feedback ">
-                                                <div>Username is required</div>
-                                            </div>
-                                        </div>
-                                    </form>
+                                    <h5 class="modal-subtitle">
+                                        Are you sure you want to remove this student from the class?
+                                    </h5>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary btn-modal-color">Add new class</button>
+                                <div class="modal-footer modal-delete-student">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                                    <button type="button" class="btn btn-primary btn-modal-color">Yes, delete</button>
                                 </div>
                             </div>
                         </div>
