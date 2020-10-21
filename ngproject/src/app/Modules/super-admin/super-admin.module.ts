@@ -1,4 +1,3 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 // Rutas
@@ -15,7 +14,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   declarations: [],
   imports: [
     CommonModule,
-    BrowserModule,
     SuperAdminRoutingModule,
     FontAwesomeModule
   ],

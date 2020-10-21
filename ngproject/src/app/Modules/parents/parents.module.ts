@@ -1,30 +1,22 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 // Rutas
-import { APP_ROUTING } from './parents.routes';
+import { ParentsRoutingModule } from './parents-routing.module';
 // servicios
 
 // font awesome
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
 // components
-import { ParentsRoutingModule } from './parents-routing.module';
-import { ParentsComponent } from './parents.component';
-import { ParentsViewStudentComponent } from './parents-view-student/parents-view-student.component';
 
 
 @NgModule({
-  declarations: [
-    ParentsComponent,
-    ParentsViewStudentComponent,
-  ],
+  declarations: [],
   imports: [
-    BrowserModule,
+    CommonModule,
     ParentsRoutingModule,
-    APP_ROUTING,
     FontAwesomeModule
   ],
   providers: [],
-  bootstrap: [ParentsComponent]
+  bootstrap: []
 })
 export class ParentsModule { }

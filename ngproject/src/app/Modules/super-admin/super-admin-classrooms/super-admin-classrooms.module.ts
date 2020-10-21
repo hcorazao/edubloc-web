@@ -1,4 +1,3 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 // Rutas
@@ -17,7 +16,6 @@ import { SuperAdminClassroomsComponent } from './super-admin-classrooms.componen
     SuperAdminClassroomsComponent
   ],
   imports: [
-    BrowserModule,
     CommonModule,
     SuperAdminClassroomsRoutingModule,
     FontAwesomeModule
