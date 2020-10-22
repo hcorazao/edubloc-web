@@ -9,6 +9,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 // components
 import { ParentsViewStudentComponent } from './parents-view-student.component';
+import { NgbdDatepickerRangePopupModule } from '../../../components/datepicker-range-popup/datapicker-range-popup.module';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { ParentsViewStudentComponent } from './parents-view-student.component';
   imports: [
     CommonModule,
     ParentsViewStudentRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgbdDatepickerRangePopupModule
   ],
   exports: [
     ParentsViewStudentComponent

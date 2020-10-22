@@ -10,6 +10,14 @@ const routes: Routes = [
     path: 'teacher-view-student',
     loadChildren: () => import('./teacher-view-student/teacher-view-student.module').then ( m => m.TeacherViewStudentModule)
   },
+  {
+    path: 'teacher-view-class',
+    loadChildren: () => import('./teacher-view-class/teacher-view-class.module').then ( m => m.TeacherViewClassModule)
+  },
+  {
+    path: 'teacher-past-class-list',
+    loadChildren: () => import('./teacher-past-class-list/teacher-past-class-list.module').then ( m => m.TeacherPastClassListModule)
+  }
 ];
 
 @NgModule({

@@ -1,0 +1,101 @@
+$white: #ffffff;
+$Accent-blue: #175FFf;
+$Accent-fiolet: #F6A521;
+$Logo-gradient: linear-gradient(226.27deg, #EAA675 0%, #EA7D75 100%);
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+//navbar *************************************************************
+.navbar-space-style {
+    display: flex;
+    justify-content: space-around;
+}
+
+// jumbotron classes *************************************************
+div.jumbotron.classes-jumbotron {
+    background-color: #ffffff;
+    height: 76px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 5px 0 5px 0;
+    margin: 0 40px 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// modal *************************************************************
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-modal-color {
+    background-color: $Accent-fiolet;
+    border: none;
+}
+
+.btn-color-end-div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-deletefromclass {
+    background-color: #F46565;
+    border: none;
+}
+
+// card user ***********************************************************
+div.card-group.align-items-center {
+    padding: 10px 0 10px 0;
+}
+
+img.float-left.rounded-circle {
+    width: 50px;
+    margin: 0 10px 0 0;
+}
+
+.img-user-icons {
+    display: flex;
+    width: 50px;
+    padding: 0 10px 0 0;
+    border-radius: 5px;
+}
+
+.item-user-card {
+    display: flex;
+    align-items: center;
+}
+
+button.btn.btn-items-coll {
+    display: flex;
+}
+
+div.card-group.d-flex.usercard-collapse-1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+div.card.usercard-collapse-styles {
+    display: flex;
+}
+
+// card ****************************************************************
+.cards-space-styles {
+    padding: 10px 10px 0 0;
+}

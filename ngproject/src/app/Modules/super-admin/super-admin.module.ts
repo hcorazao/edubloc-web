@@ -6,7 +6,6 @@ import { SuperAdminRoutingModule } from './super-admin-routing.module';
 
 // font awesome
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
 // components
 
 

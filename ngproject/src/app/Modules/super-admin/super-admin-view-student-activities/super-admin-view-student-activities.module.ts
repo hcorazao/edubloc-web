@@ -1,31 +1,31 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 // Rutas
-import { SuperAdminStudentActivitiesRoutingModule } from './super-admin-student-activites-routing.module';
+import { SuperAdminViewStudentActivitiesRoutingModule } from './super-admin-view-student-activities-routing.module';
 // servicios
 
 // font awesome
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 // components
-import { SuperAdminStudentActivitiesComponent } from './super-admin-student-activities.component';
+import { SuperAdminViewStudentActivitiesComponent } from './super-admin-view-student-activities.component';
 import { NgbdDatepickerRangePopupModule } from '../../../components/datepicker-range-popup/datapicker-range-popup.module';
 
 
 @NgModule({
   declarations: [
-    SuperAdminStudentActivitiesComponent
+    SuperAdminViewStudentActivitiesComponent
   ],
   imports: [
     CommonModule,
-    SuperAdminStudentActivitiesRoutingModule,
+    SuperAdminViewStudentActivitiesRoutingModule,
     FontAwesomeModule,
     NgbdDatepickerRangePopupModule
   ],
   exports: [
-    SuperAdminStudentActivitiesComponent
+    SuperAdminViewStudentActivitiesComponent
   ],
   providers: [],
-  bootstrap: [SuperAdminStudentActivitiesComponent]
+  bootstrap: [SuperAdminViewStudentActivitiesComponent]
 })
-export class SuperAdminStudentActivitiesModule { }
+export class SuperAdminViewStudentActivitiesModule { }

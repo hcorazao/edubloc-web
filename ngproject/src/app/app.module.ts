@@ -6,9 +6,12 @@ import { AppRoutingModule } from './app-routing.module';
 
 // font awesome
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
+// ng-bootstrap.github.io
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 // components
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
+import { NgbdDatepickerRangePopupModule } from './components/datepicker-range-popup/datapicker-range-popup.module';
 
 
 @NgModule({
@@ -18,9 +21,14 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgbModule,
+    FormsModule,
+    NgbdDatepickerRangePopupModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }

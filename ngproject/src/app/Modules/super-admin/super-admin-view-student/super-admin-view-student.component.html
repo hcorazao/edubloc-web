@@ -44,44 +44,48 @@
 
 <body>
     <div class="jumbotron classes-jumbotron">
-        <div class="container align-items-center">
-            <div class="row">
-                <div class="col">
-                    <div class="d-flex">
-                        <h5>
-                            <a class="a-jumbotrom" href="">
-                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
-                                </svg> Wang Song
-                            </a>
-                        </h5>
-                    </div>
-                </div>
-                <div class="col col-end-div">
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary right btn-deletefromclass" data-toggle="modal" data-target="#staticBackdrop">
-                        Delete from class
-                    </button>
-                    <!-- Modal -->
-                    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="staticBackdropLabel">Delete student</h5>
+        <div class="container-fluid align-items-center">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead class="no-border-table">
+                        <tr>
+                            <th>
+                                <h5>
+                                    <a class="a-jumbotrom" href="">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                                        </svg> Wang Song
+                                    </a>
+                                </h5>
+                            </th>
+                            <th class="btn-color-end-div">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary right btn-deletefromclass" data-toggle="modal" data-target="#staticBackdrop">
+                                    Delete from class
+                                </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="staticBackdropLabel">Delete student</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5 class="modal-subtitle">
+                                                    Are you sure you want to remove this student from the class?
+                                                </h5>
+                                            </div>
+                                            <div class="modal-footer modal-delete-student">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                                                <button type="button" class="btn btn-primary btn-modal-color">Yes, delete</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="modal-body">
-                                    <h5 class="modal-subtitle">
-                                        Are you sure you want to remove this student from the class?
-                                    </h5>
-                                </div>
-                                <div class="modal-footer modal-delete-student">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-                                    <button type="button" class="btn btn-primary btn-modal-color">Yes, delete</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
             </div>
         </div>
     </div>

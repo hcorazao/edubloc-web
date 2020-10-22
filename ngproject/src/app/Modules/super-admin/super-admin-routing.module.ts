@@ -23,6 +23,11 @@ const routes: Routes = [
     path: 'super-admin-classrooms',
     // tslint:disable-next-line: max-line-length
     loadChildren: () => import('./super-admin-classrooms/super-admin-classrooms.module').then ( m => m.SuperAdminClassroomsModule)
+  },
+  {
+    path: 'super-admin-view-student-activities',
+    // tslint:disable-next-line: max-line-length
+    loadChildren: () => import('./super-admin-view-student-activities/super-admin-view-student-activities.module').then ( m => m.SuperAdminViewStudentActivitiesModule)
   }
 ];
 
