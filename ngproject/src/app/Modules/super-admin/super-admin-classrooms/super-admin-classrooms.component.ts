@@ -1,5 +1,7 @@
 import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-super-admin-classrooms',
@@ -9,9 +11,26 @@ import { Component, OnInit } from '@angular/core';
 export class SuperAdminClassroomsComponent implements OnInit {
   faSignOutAlt = faSignOutAlt;
 
-  constructor() { }
+  constructor(
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  gotoSuperAdminClassrooms() {
+    this.router.navigate(['/super-admin-classrooms']);
+  }
+  gotoSuperAdminStudentActivities() {
+    this.router.navigate(['/super-admin-student-activities']);
+  }
+  
+  gotoSignIn() {
+    this.router.navigate(['/sign-in']);
+  }
+
+  gotoSuperAdminViewClass() {
+    this.router.navigate(['/super-admin-view-class']);
   }
 
 }

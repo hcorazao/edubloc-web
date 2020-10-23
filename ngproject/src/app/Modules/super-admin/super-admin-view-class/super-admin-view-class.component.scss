@@ -18,6 +18,11 @@ body {
     justify-content: space-around;
 }
 
+.active-link {
+    border-top: blanchedalmond;
+    border-top: 4px solid;
+}
+
 // jumbotron classes *************************************************
 div.jumbotron.classes-jumbotron {
     background-color: #ffffff;
@@ -91,5 +96,12 @@ svg.bi.bi-arrow-right-short {
 a.a-view {
     text-decoration: none;
     color: $Accent-fiolet;
+    font-weight: normal;
+}
+
+a.a-view-student {
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
     font-weight: normal;
 }

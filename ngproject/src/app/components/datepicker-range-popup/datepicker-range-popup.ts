@@ -43,7 +43,7 @@ export class NgbdDatepickerRangePopup {
     this.toDate = calendar.getNext(calendar.getToday(), 'd', 10);
   }
 
-  onDateSelection(date: NgbDate) {
+  onDateSelection(date: NgbDate): void {
     if (!this.fromDate && !this.toDate) {
       this.fromDate = date;
     } else if (this.fromDate && !this.toDate && date && date.after(this.fromDate)) {
@@ -54,15 +54,15 @@ export class NgbdDatepickerRangePopup {
     }
   }
 
-  isHovered(date: NgbDate) {
+  isHovered(date: NgbDate): boolean {
     return this.fromDate && !this.toDate && this.hoveredDate && date.after(this.fromDate) && date.before(this.hoveredDate);
   }
 
-  isInside(date: NgbDate) {
+  isInside(date: NgbDate): boolean {
     return this.toDate && date.after(this.fromDate) && date.before(this.toDate);
   }
 
-  isRange(date: NgbDate) {
+  isRange(date: NgbDate): boolean {
     return date.equals(this.fromDate) || (this.toDate && date.equals(this.toDate)) || this.isInside(date) || this.isHovered(date);
   }
 

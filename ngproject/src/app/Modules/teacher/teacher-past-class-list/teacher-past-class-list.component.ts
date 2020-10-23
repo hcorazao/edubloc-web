@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-teacher-past-class-list',
@@ -7,9 +8,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeacherPastClassListComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
   }
 
+  gotoSignIn() {
+    this.router.navigate(['/sign-in']);
+  }
+
+  gotoTeacherViewClass() {
+    this.router.navigate(['/teacher-view-class']);
+  }
+
+  gotoTeacherPastClassList() {
+    this.router.navigate(['/teacher-past-class-list']);
+  }
+
+  gotoTeacherViewStudent() {
+    this.router.navigate(['/teacher-view-student']);
+  }
+  
 }

@@ -25,15 +25,15 @@
                                     <div class="col col button-choose-role">
                                         <div class="btn-group-toggle" data-toggle="buttons">
                                             <label class="btn btn-primary btn-choose-role" (click)="gotoSignUp()" style="cursor:pointer;">
-                                                <input type="checkbox" checked>I'm teacher
+                                                <input type="checkbox">I'm teacher
                                             </label>
                                         </div>
                                     </div>
                                     &
                                     <div class="col col">
-                                        <div class="btn-group-toggle" data-toggle="buttons">
-                                            <label class="btn btn-primary btn-choose-role active" (click)="gotoSignUpParent()" style="cursor:pointer;">
-                                                <input type="checkbox">I'm parent
+                                        <div class="btn-group-toggle active" data-toggle="buttons">
+                                            <label class="btn btn-primary btn-choose-role" (click)="gotoSignUpParent()" style="cursor:pointer;">
+                                                <input type="checkbox" checked>I'm parent
                                             </label>
                                         </div>
                                     </div>;
@@ -72,7 +72,7 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                                     <label class="form-check-label" for="exampleRadios1">
-                                        Famale
+                                        Female
                                     </label>
                                 </div>
                                 <div class="form-check">
@@ -80,6 +80,20 @@
                                     <label class="form-check-label" for="exampleRadios1">
                                         Transgender
                                     </label>
+                                </div>
+                            </div>
+                            <div class="form-group form-line-bottom ">
+                                <label for="Student Phone Number">Student Phone Number</label>
+                                <input type="number" formControlName="student phone number" class="form-control input-lineal " placeholder="e.g. +82 99 999-99-99" />
+                                <div class="invalid-feedback ">
+                                    <div>Student Phone Number is required</div>
+                                </div>
+                            </div>
+                            <div class="form-group form-line-bottom ">
+                                <label for="Student Full Name">Student Full Name</label>
+                                <input type="text " formControlName="student fullname" class="form-control input-lineal " placeholder="e.g. Jon Song" />
+                                <div class="invalid-feedback ">
+                                    <div>Student Full Name is required</div>
                                 </div>
                             </div>
                             <div class="custom-control custom-checkbox checkbox-styles ">
