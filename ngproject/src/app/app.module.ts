@@ -11,7 +11,6 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 // components
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import { NgbdDatepickerRangePopupModule } from './components/datepicker-range-popup/datapicker-range-popup.module';
 
 
 @NgModule({
@@ -23,8 +22,7 @@ import { NgbdDatepickerRangePopupModule } from './components/datepicker-range-po
     AppRoutingModule,
     FontAwesomeModule,
     NgbModule,
-    FormsModule,
-    NgbdDatepickerRangePopupModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [

@@ -6,14 +6,15 @@ import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
 // component datepiker
-import {NgbdDatepickerRangePopupModule} from './app/components/datepicker-range-popup/datapicker-range-popup.module';
+//import {NgbdDatepickerRangePopupModule} from './app/components/datepicker-range-popup/datapicker-range-popup.module';
 
 if (environment.production) {
   enableProdMode();
 }
 
 // tslint:disable-next-line: new-parens
-platformBrowserDynamic().bootstrapModule((AppModule), new (NgbdDatepickerRangePopupModule))
+platformBrowserDynamic()
+  .bootstrapModule(AppModule)
   .then(ref => {
     // Ensure Angular destroys itself on hot reloads.
     if (window['ngRef']) {

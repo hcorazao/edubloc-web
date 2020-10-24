@@ -1,0 +1,115 @@
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col rectangle-109-blue">
+                <div class="container">
+                    <div class="row logos-styles-align">
+                        <img src="./assets/img/edubloc_name.svg" class="logo-signin">
+                    </div>
+                    <div class="row logos-styles-align">
+                        <img [src]="'/src'" class="logo-name-signin">
+                    </div>
+                </div>
+            </div>
+            <div class="col rectangle-109-white">
+                <div class="container">
+                    <div class="row row-go-to-the-link">
+                        <p>Back to?<a class="btn btn-link" (click)="gotoSignIn()" style="cursor:pointer;">Sign In</a></p>
+                    </div>
+                    <div class="row form-align-styles">
+                        <form>
+                            <h1>Sign Up</h1>
+                            <br>
+                            <div class="form-row row-choose-role">
+                                <div class="row">
+                                    <div class="col col button-choose-role">
+                                        <div class="btn-group-toggle" data-toggle="buttons">
+                                            <label class="btn btn-primary btn-choose-role" (click)="gotoSignUp()" style="cursor:pointer;">
+                                                <input type="checkbox">I'm teacher
+                                            </label>
+                                        </div>
+                                    </div>
+                                    &
+                                    <div class="col col">
+                                        <div class="btn-group-toggle active" data-toggle="buttons">
+                                            <label class="btn btn-primary btn-choose-role" (click)="gotoSignUpParent()" style="cursor:pointer;">
+                                                <input type="checkbox" checked>I'm parent
+                                            </label>
+                                        </div>
+                                    </div>;
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-group form-line-bottom ">
+                                <label for="Your Full Name ">FullName</label>
+                                <input type="text " formControlName="fullname " class="form-control input-lineal " placeholder="e.g. John Doe " />
+                                <div class="invalid-feedback ">
+                                    <div>Username is required</div>
+                                </div>
+                            </div>
+                            <div class="form-group form-line-bottom ">
+                                <label for="Your Email ">Email</label>
+                                <input type="text " formControlName="username " class="form-control input-lineal " placeholder="e.g. examble@mail.com " />
+                                <div class="invalid-feedback ">
+                                    <div>Username is required</div>
+                                </div>
+                            </div>
+                            <div class="form-group form-line-bottom ">
+                                <label for="password ">Password</label>
+                                <input type="password " formControlName="password " class="form-control input-lineal " placeholder="e.g. Aaqwerty124 " />
+                                <div class="invalid-feedback ">
+                                    <div>Password is required</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <p>Gender</p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Male
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Female
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Transgender
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group form-line-bottom ">
+                                <label for="Student Phone Number">Student Phone Number</label>
+                                <input type="number" formControlName="student phone number" class="form-control input-lineal " placeholder="e.g. +82 99 999-99-99" />
+                                <div class="invalid-feedback ">
+                                    <div>Student Phone Number is required</div>
+                                </div>
+                            </div>
+                            <div class="form-group form-line-bottom ">
+                                <label for="Student Full Name">Student Full Name</label>
+                                <input type="text " formControlName="student fullname" class="form-control input-lineal " placeholder="e.g. Jon Song" />
+                                <div class="invalid-feedback ">
+                                    <div>Student Full Name is required</div>
+                                </div>
+                            </div>
+                            <div class="custom-control custom-checkbox checkbox-styles ">
+                                <input type="checkbox " class="custom-control-input " id="customCheck1 ">
+                                <label class="custom-control-label " for="customCheck1 ">By registering I accept <a class="btn btn-link checkbox-link-styles ">Terms and Condition</a>&<a class="btn btn-link checkbox-link-styles ">Privacy Statement</a></label>
+                            </div>
+                            <br>
+                            <div class="form-group align-btn-accent-fiolet ">
+                                <button class="btn btn-accent-fiolet ">
+                                    Sign Up
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

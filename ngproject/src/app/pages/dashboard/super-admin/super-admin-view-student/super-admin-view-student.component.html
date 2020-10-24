@@ -1,0 +1,337 @@
+<nav class="navbar-space-style navbar navbar-expand-lg navbar-dark bg-primary">
+    <div>
+        <a class="navbar-brand" href="#">
+            <img src="assets/img/favicon_logo.png" width="30" height="30" alt="" loading="lazy">
+        </a>
+    </div>
+
+    <div id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link active active-link" (click)="gotoSuperAdminClassrooms()" style="cursor:pointer;" routerLinkActive="active-link">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-lines-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7 1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm2 9a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+                    </svg> Classrooms
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" (click)="gotoSuperAdminStudentActivities()" style="cursor:pointer;" routerLinkActive="active-link">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3zm4.354 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                    </svg> Student Activities
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" (click)="gotoSignIn()" style="cursor:pointer;">
+                    Administrator
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                        <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                    </svg>
+                </a>
+            </li>
+            <a class="navbar-brand" href="#">
+            </a>
+        </ul>
+    </div>
+</nav>
+
+<body>
+    <div class="jumbotron classes-jumbotron">
+        <div class="container-fluid align-items-center">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead class="no-border-table">
+                        <tr>
+                            <th>
+                                <h5>
+                                    <a class="a-jumbotrom" (click)="gotoSuperAdminStudentActivities()" style="cursor:pointer;">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                                        </svg> Wang Song
+                                    </a>
+                                </h5>
+                            </th>
+                            <th class="btn-color-end-div">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary right btn-deletefromclass" data-toggle="modal" data-target="#staticBackdrop">
+                                    Delete from class
+                                </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="staticBackdropLabel">Delete student</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5 class="modal-subtitle">
+                                                    Are you sure you want to remove this student from the class?
+                                                </h5>
+                                            </div>
+                                            <div class="modal-footer modal-delete-student">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                                                <button type="button" class="btn btn-primary btn-modal-color">Yes, delete</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container d-flex">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card d-flex">
+                    <div class="card-group align-items-center">
+                        <div class="card-body">
+                            <img src="https://placeimg.com/300/230/nature" class="float-left rounded-circle">
+                            <h5 class="card-title">Wang Song</h5>
+                        </div>
+                    </div>
+                    <div class="card-group d-flex usercard-collapse-1">
+                        <div class="card-group d-flex">
+                            <div id="accordion">
+                                <div class="card usercard-collapse-styles">
+                                    <div class="card-header " id="headingOne">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-items-coll" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                <img src="https://placeimg.com/300/230/nature" class="float-left img-user-icons">
+                                                Introduction
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse multi-collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Personal Information</h5>
+                                            <p class="card-text">Wan Song, 17 year</p>
+                                            <p class="card-text">+82 51 441-99-04</p>
+                                            <p class="card-text">wansong@gmail.com</p>
+                                            <p class="card-text">Seul</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Brand Statement</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quasi esse blanditiis libero tempora reiciendis excepturi ipsam quas, itaque quia natus iure fugiat in? Voluptatum hic eaque ipsum aut blanditiis?</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Goals for the current year</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quasi esse blanditiis libero tempora reiciendis excepturi ipsam quas, itaque quia natus iure fugiat in? Voluptatum hic eaque ipsum aut blanditiis?</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">My Strengths / Weakness</h5>
+                                            <h6 class="card-subtitle">Strengths</h6>
+                                            <p class="card-text">Attentive, porposeful, intelligent</p>
+                                            <h6 class="card-subtitle">Weakness</h6>
+                                            <p class="card-text">Lazy, passive</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card usercard-collapse-styles">
+                                    <div class="card-header" id="headingTwo">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-items-coll" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                                                <img src="https://placeimg.com/300/230/nature" class="float-left img-user-icons">
+                                                Learning History
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse multi-collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Career Goal Setting</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quasi esse blanditiis libero tempora reiciendis excepturi ipsam quas, itaque quia natus iure fugiat in? Voluptatum hic eaque ipsum aut blanditiis?</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Comprenhensive School Life Record Book</h5>
+                                            <h6 class="card-subtitle">Bookname.pdf</h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Interest</h5>
+                                            <h6 class="card-subtitle">Programming, Basketbol</h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Favorite Schools</h5>
+                                            <p class="card-text">Example Schoole Name</p>
+                                            <p class="card-text">Example Schoole Name</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">School Awwards</h5>
+                                            <div>
+                                                <img src="https://placeimg.com/300/230/nature" class="float-left img-user-icons">
+                                            </div>
+                                            <div>
+                                                <h6 class="card-subtitle">Example Awward Name</h6>
+                                                <p class="card-text">2018/02/22</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card usercard-collapse-styles">
+                                    <div class="card-header" id="headingThree">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-items-coll" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                                                <img src="https://placeimg.com/300/230/nature" class="float-left img-user-icons">
+                                                Leraning Outcomes
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseThree" class="collapse multi-collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Activities</h5>
+                                            <h6 class="card-subtitle">Volunteering</h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Certifications</h5>
+                                            <h6 class="card-subtitle">Example certification name</h6>
+                                            <p class="card-text">ID 1233243241242t</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Internships</h5>
+                                            <h6 class="card-subtitle">Example organization name</h6>
+                                            <p class="card-text">Example position</p>
+                                            <p class="card-text">2019/06/01 - 2019/09/30</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Portfolio</h5>
+                                            <div class="col">
+                                                <img src="https://placeimg.com/300/230/nature" class="float-left">
+                                            </div>
+                                            <div class="col">
+                                                <h6 class="card-subtitle">Example Project Name</h6>
+                                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quasi esse blanditiis libero tempora reiciendis excepturi ipsam qua</p>
+                                                <br>
+                                                <p class="card-text">Skills: HTML, CSSS, Java</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="container d-flex">
+                    <div class="row">
+                        <div class="col col-6 cards-space-styles">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="https://placeimg.com/300/230/nature" class="float-left img-user-icons">
+                                    <h5 class="card-title">Nursing home - Warm heart</h5>
+                                    <br>
+                                    <h5 class="card-title">Address</h5>
+                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
+                                    <h5 class="card-title">Activity Timeline</h5>
+                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col col-6 cards-space-styles">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="https://placeimg.com/300/230/nature" class="float-left img-user-icons">
+                                    <h5 class="card-title">Nursing home - Warm heart</h5>
+                                    <br>
+                                    <h5 class="card-title">Address</h5>
+                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
+                                    <h5 class="card-title">Activity Timeline</h5>
+                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-6 cards-space-styles">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="https://placeimg.com/300/230/nature" class="float-left img-user-icons">
+                                    <h5 class="card-title">Nursing home - Warm heart</h5>
+                                    <br>
+                                    <h5 class="card-title">Address</h5>
+                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
+                                    <h5 class="card-title">Activity Timeline</h5>
+                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-6 cards-space-styles">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="https://placeimg.com/300/230/nature" class="float-left img-user-icons">
+                                    <h5 class="card-title">Nursing home - Warm heart</h5>
+                                    <br>
+                                    <h5 class="card-title">Address</h5>
+                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
+                                    <h5 class="card-title">Activity Timeline</h5>
+                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-6 cards-space-styles">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="https://placeimg.com/300/230/nature" class="float-left img-user-icons">
+                                    <h5 class="card-title">Nursing home - Warm heart</h5>
+                                    <br>
+                                    <h5 class="card-title">Address</h5>
+                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
+                                    <h5 class="card-title">Activity Timeline</h5>
+                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-6 cards-space-styles">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="https://placeimg.com/300/230/nature" class="float-left img-user-icons">
+                                    <h5 class="card-title">Nursing home - Warm heart</h5>
+                                    <br>
+                                    <h5 class="card-title">Address</h5>
+                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
+                                    <h5 class="card-title">Activity Timeline</h5>
+                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-6 cards-space-styles">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="https://placeimg.com/300/230/nature" class="float-left img-user-icons">
+                                    <h5 class="card-title">Nursing home - Warm heart</h5>
+                                    <br>
+                                    <h5 class="card-title">Address</h5>
+                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
+                                    <h5 class="card-title">Activity Timeline</h5>
+                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-6 cards-space-styles">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="https://placeimg.com/300/230/nature" class="float-left img-user-icons">
+                                    <h5 class="card-title">Nursing home - Warm heart</h5>
+                                    <br>
+                                    <h5 class="card-title">Address</h5>
+                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
+                                    <h5 class="card-title">Activity Timeline</h5>
+                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

@@ -2,7 +2,7 @@ import { SuperAdminViewClassComponent } from './Modules/super-admin/super-admin-
 import { SuperAdminClassroomsComponent } from './Modules/super-admin/super-admin-classrooms/super-admin-classrooms.component';
 import { RouterModule, Routes } from '@angular/router';
 import { SigninComponent } from './Modules/login/signin/signin.component';
-import { SuperAdminViewStudentComponent } from './Modules/super-admin/super-admin-view-student/super-admin-view-student.component';
+import { SuperAdminViewStudentComponent } from './Modules/super-admin/dashboard/super-admin-view-student/dashboard/super-admin-view-student.component';
 
 const APP_ROUTES: Routes = [
     { path: 'signin', component: SigninComponent },
