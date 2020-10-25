@@ -24,8 +24,8 @@ export class SigninComponent implements OnInit {
   }
 
   signIn() {
-    console.log("signIn");
-    this.router.navigate(['/dashboard/super-admin-view-student']);
+    console.log('signIn');
+    this.router.navigate(['/dashboard/super-admin-student-activities']);
   }
 
 }

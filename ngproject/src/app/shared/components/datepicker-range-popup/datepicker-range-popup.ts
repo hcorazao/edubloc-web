@@ -7,16 +7,15 @@ import {NgbDate, NgbCalendar, NgbDateParserFormatter} from '@ng-bootstrap/ng-boo
   styles: [`
     .form-group.hidden {
       width: 0;
+      height: 0;
       margin: 0;
       border: none;
       padding: 0;
+}
     }
     .custom-day {
       text-align: center;
       padding: 0.185rem 0.25rem;
-      display: inline-block;
-      height: 2rem;
-      width: 2rem;
     }
     .custom-day.focused {
       background-color: #e6e6e6;

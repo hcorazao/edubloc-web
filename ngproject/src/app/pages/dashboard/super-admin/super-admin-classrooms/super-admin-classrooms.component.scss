@@ -15,7 +15,6 @@ body {
 //navbar *************************************************************
 .navbar-space-style {
     display: flex;
-    justify-content: space-around;
 }
 
 .active-link {
@@ -23,16 +22,66 @@ body {
     border-top: 4px solid;
 }
 
+div#navbarNavAltMarkup.collapse.navbar-collapese {
+    align-items: center;
+    justify-items: center;
+}
+
+a.nav-link {
+    text-decoration: none;
+    color: $white;
+}
+
 // jumbotron classes *************************************************
 div.jumbotron.classes-jumbotron {
     background-color: #ffffff;
-    height: 76px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 5px 0 5px 0;
     margin: 0 40px 0 40px;
+}
+
+.items-jumbotron-row-styles {
     display: flex;
-    justify-content: center;
+    vertical-align: middle;
+    align-content: center;
     align-items: center;
+}
+
+.justify-content-jumbotron-date {
+    display: flex;
+    vertical-align: middle;
+    align-content: center;
+    align-items: center;
+    margin: 0 0 0 0;
+}
+
+.block-size-style {
+    box-sizing: content-box;
+    width: 100%;
+}
+
+.tabla-jumbotron-class {
+    width: fit-content;
+}
+
+a.a-jumbotron {
+    text-decoration: none;
+    color: black;
+}
+
+.form-line-bottom {
+    border-bottom: #000000 solid 1px;
+    border-radius: 1PX;
+    object-position: left;
+}
+
+.input-styles-search {
+    border: none;
+}
+
+.btn-jumbotron-import {
+    background-color: #34A853;
+    border: none;
 }
 
 // modal *************************************************************

@@ -1,13 +1,13 @@
 <nav class="navbar-space-style navbar navbar-expand-lg navbar-dark bg-primary">
-    <div>
-        <a class="navbar-brand" href="#">
-            <img src="assets/img/favicon_logo.png" width="30" height="30" alt="" loading="lazy">
-        </a>
-    </div>
-
-    <div id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
+    <a class="navbar-brand" href="#">
+        <img src="assets/img/logo-menu.svg" width="175" height="30" alt="" loading="lazy">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-lg-around" id="navbarNavAltMarkup">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
                 <a class="nav-link" (click)="gotoSuperAdminClassrooms()" style="cursor:pointer;" routerLinkActive="active-link">
                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-lines-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7 1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm2 9a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
@@ -23,66 +23,70 @@
                 </a>
             </li>
         </ul>
-    </div>
-
-    <div id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" (click)="gotoSignIn()" style="cursor:pointer;">
-                    Administrator
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
-                        <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
-                    </svg>
-                </a>
-            </li>
-            <a class="navbar-brand" href="#">
+        <div class="my-2 my-lg-0">
+            <a class="nav-link" (click)="gotoSignIn()" style="cursor:pointer;">
+                Administrator
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                    <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                </svg>
             </a>
-        </ul>
+        </div>
     </div>
 </nav>
 
 <body>
     <div class="jumbotron classes-jumbotron">
-        <div class="container-fluid align-items-center">
-            <div class="table-responsive-lg">
-                <table class="table">
-                    <thead class="no-border-table">
-                        <tr>
-                            <th style=" border: inset 0pt">
-                                <h5>
-                                    <a class="a-jumbotrom" (click)="gotoSuperAdminViewClass()" style="cursor:pointer;">
-                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
-                                        </svg> Wang Song
-                                    </a>
-                                </h5>
-                            </th>
-                            <th style=" border: inset 0pt">
-                                <div class="dropdown mr-1 d-flex">
-                                    <button type="button" class="btn btn-light dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                                    Activities
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                    </div>
-                                </div>
-                            </th>
-                            <th style=" border: inset 0pt">
-                                <ngbd-datepicker-range-popup></ngbd-datepicker-range-popup>
-                            </th>
-                        </tr>
-                    </thead>
-                </table>
+        <div class="container">
+            <div class="row items-jumbotron-row-styles">
+                <div class="col-sm">
+                    <h5>
+                        <a class="a-jumbotrom" (click)="gotoSuperAdminViewClass()" style="cursor:pointer;">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                            </svg> Wang Song
+                        </a>
+                    </h5>
+                </div>
+                <div class="col-sm">
+                    <div class="dropdown mr-1 d-flex">
+                        <button type="button" class="btn btn-light dropdown-toggle block-size-style" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                        Activities
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-row justify-content-jumbotron-date">
+                        <div class="form-group col col-md-4 justify-content-jumbotron-date">
+                            <p class="justify-content-jumbotron-date">From</p>
+                        </div>
+                        <div class="form-group col justify-content-jumbotron-date">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Date" aria-label="Search">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-row justify-content-jumbotron-date">
+                        <div class="form-group col col-md-4 justify-content-jumbotron-date">
+                            <p class="justify-content-jumbotron-date">To</p>
+                        </div>
+                        <div class="form-group col justify-content-jumbotron-date">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Date" aria-label="Search">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <br>
     <div class="container d-flex">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-4">
                 <div class="card d-flex">
                     <div class="card-group align-items-center">
                         <div class="card-body">
@@ -91,19 +95,17 @@
                         </div>
                     </div>
                     <div class="card-group d-flex usercard-collapse-1">
-                        <div class="card-group d-flex">
-                            <div id="accordion">
-                                <div class="card usercard-collapse-styles">
-                                    <div class="card-header " id="headingOne">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-items-coll" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                <img src="https://placeimg.com/300/230/nature" class="float-left img-user-icons">
-                                                Introduction
-                                            </button>
+                        <div class="card-group d-flex card-styles-items-user">
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title">
+                                            <img src="https://placeimg.com/300/230/nature" class="float-left img-user-icons">
+                                            <a class="a-styles-user-card" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                            Introduction</a>
                                         </h5>
                                     </div>
-
-                                    <div id="collapseOne" class="collapse multi-collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div id="collapse1" class="panel-collapse collapse in">
                                         <div class="card-body">
                                             <h5 class="card-title">Personal Information</h5>
                                             <p class="card-text">Wan Song, 17 year</p>
@@ -128,16 +130,16 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card usercard-collapse-styles">
-                                    <div class="card-header" id="headingTwo">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-items-coll" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
-                                                <img src="https://placeimg.com/300/230/nature" class="float-left img-user-icons">
-                                                Learning History
-                                            </button>
+                                <br>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title">
+                                            <img src="https://placeimg.com/300/230/nature" class="float-left img-user-icons">
+                                            <a class="a-styles-user-card" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                            Learning History</a>
                                         </h5>
                                     </div>
-                                    <div id="collapseTwo" class="collapse multi-collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div id="collapse2" class="panel-collapse collapse">
                                         <div class="card-body">
                                             <h5 class="card-title">Career Goal Setting</h5>
                                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quasi esse blanditiis libero tempora reiciendis excepturi ipsam quas, itaque quia natus iure fugiat in? Voluptatum hic eaque ipsum aut blanditiis?</p>
@@ -167,16 +169,16 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card usercard-collapse-styles">
-                                    <div class="card-header" id="headingThree">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-items-coll" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
-                                                <img src="https://placeimg.com/300/230/nature" class="float-left img-user-icons">
-                                                Leraning Outcomes
-                                            </button>
+                                <br>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title">
+                                            <img src="https://placeimg.com/300/230/nature" class="float-left img-user-icons">
+                                            <a class="a-styles-user-card" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                            Leraning Outcomes</a>
                                         </h5>
                                     </div>
-                                    <div id="collapseThree" class="collapse multi-collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div id="collapse3" class="panel-collapse collapse">
                                         <div class="card-body">
                                             <h5 class="card-title">Activities</h5>
                                             <h6 class="card-subtitle">Volunteering</h6>

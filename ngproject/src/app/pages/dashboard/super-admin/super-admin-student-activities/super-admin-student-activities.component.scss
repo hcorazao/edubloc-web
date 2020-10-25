@@ -15,7 +15,6 @@ body {
 //navbar *************************************************************
 .navbar-space-style {
     display: flex;
-    justify-content: space-around;
 }
 
 .active-link {
@@ -23,22 +22,42 @@ body {
     border-top: 4px solid;
 }
 
+div#navbarNavAltMarkup.collapse.navbar-collapese {
+    align-items: center;
+    justify-items: center;
+}
+
+a.nav-link {
+    text-decoration: none;
+    color: $white;
+}
+
 // jumbotron classes *************************************************
 div.jumbotron.classes-jumbotron {
     background-color: #ffffff;
-    height: 76px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 5px 0 5px 0;
     margin: 0 40px 0 40px;
+}
+
+.items-jumbotron-row-styles {
     display: flex;
-    justify-content: space-around;
+    vertical-align: middle;
+    align-content: center;
     align-items: center;
 }
 
-div.container.d-flex.align-items-center {
-    justify-content: space-between;
-    width: max-content;
-    padding: 0 0 0 0;
+.justify-content-jumbotron-date {
+    display: flex;
+    vertical-align: middle;
+    align-content: center;
+    align-items: center;
+    margin: 0 0 0 0;
+}
+
+.block-size-style {
+    box-sizing: content-box;
+    width: 100%;
 }
 
 .tabla-jumbotron-class {
@@ -86,6 +105,16 @@ a.a-jumbotron {
 .btn-add-class {
     background-color: #f6a521;
     border: none;
+}
+
+// clases user card *****************************************************
+.card-styles-items-user {
+    padding: 5px 5px 10px 10px;
+}
+
+.a-styles-user-card {
+    text-decoration: none;
+    color: black;
 }
 
 // tabla clases ***********************************************************
