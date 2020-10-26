@@ -1,6 +1,6 @@
 <body>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row signin-form">
             <div class="col rectangle-109-blue">
                 <div class="container">
                     <div class="row logos-styles-align">
@@ -13,8 +13,8 @@
             </div>
             <div class="col rectangle-109-white">
                 <div class="container">
-                    <div class="row row-go-to-the-link">
-                        <p>Don't have an account?<a class="btn btn-link " (click)="gotoSignUp()" style="cursor:pointer;" [routerLink]="['sign-up']">Sign Up</a></p>
+                    <div class="row row-go-to-the-link top-heading-form">
+                        <p><span>Don't have an account?</span><a class="btn btn-link " (click)="gotoSignUp()" style="cursor:pointer;" [routerLink]="['sign-up']">Sign Up</a></p>
                     </div>
                     <div class="row form-align-styles">
                         <form>
@@ -36,7 +36,7 @@
                                             <div>Password is required</div>
                                         </div>
                                     </div>
-                                    <div class="form-group col">
+                                    <div class="form-group col forgot-pass">
                                         <a class="btn btn-link" (click)="gotoResetPassword()" style="cursor:pointer;">Forgot password?</a>
                                     </div>
                                 </div>

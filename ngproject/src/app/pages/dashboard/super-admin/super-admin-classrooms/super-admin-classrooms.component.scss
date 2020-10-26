@@ -122,3 +122,70 @@ a.a-view {
     color: $Accent-fiolet;
     font-weight: normal;
 }
+
+/*----(26-10-2020)-New-Fixing----*/
+nav.custom-nav-app ul.navbar-nav li > a {
+    border-top: 4px solid transparent;
+}
+nav.custom-nav-app ul.navbar-nav li.active > a {
+    border-top: 4px solid #ffffff;
+}
+nav.custom-nav-app{
+    padding-top:0;
+}
+nav.custom-nav-app ul.navbar-nav li{
+    margin:0 15px;
+}
+table.custom-table-appfix {
+    white-space: nowrap;
+    width: 100%;
+}
+body{width:100%;}
+.custom-studentbtn-popup input.form-control {
+    border-color: #eeeeee;
+    border-radius: 6px;
+    height: 50px;
+    line-height: 50px;
+}
+.custom-studentbtn-popup .input-group-prepend button {
+    border-color: #eeeeee;
+    margin-right: 15px;
+    height: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.jumbotron.classes-jumbotron .container {
+    max-width: inherit;
+}
+.custom-top-button {
+    width: auto;
+    max-width: 160px;
+    border: 1px solid #eeeeee;
+    margin: 0 15px;
+    border-radius: 7px;
+}
+.custom-top-button:first-child {
+    margin-right: 0;
+}
+@media screen and (max-width:1199px){
+.jumbotron.classes-jumbotron .container {
+    max-width: inherit;
+}
+}
+@media screen and (max-width:767px){
+.custom-top-button {
+    max-width: inherit;
+}
+}
+@media screen and (max-width:575px){
+    .btn-color-end-div button {
+        margin: 5px auto;
+    }
+    .form-row.justify-content-jumbotron-date {
+        margin-bottom: 10px;
+    }
+    .custom-top-button {
+        width:100%;
+    }
+
+}

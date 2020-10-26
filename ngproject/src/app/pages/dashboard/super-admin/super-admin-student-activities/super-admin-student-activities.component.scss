@@ -134,3 +134,39 @@ a.a-view-student {
     color: black;
     font-weight: normal;
 }
+
+/*----(26-10-2020)-New-Fixing----*/
+nav.custom-nav-app ul.navbar-nav li > a {
+    border-top: 4px solid transparent;
+}
+nav.custom-nav-app ul.navbar-nav li.active > a {
+    border-top: 4px solid #ffffff;
+}
+nav.custom-nav-app{
+    padding-top:0;
+}
+nav.custom-nav-app ul.navbar-nav li{
+    margin:0 15px;
+}
+table.custom-table-appfix {
+    white-space: nowrap;
+    width: 100%;
+}
+body{width:100%;}
+.jumbotron.classes-jumbotron .container {
+    max-width: inherit;
+}
+@media screen and (max-width:1199px){
+    .jumbotron.classes-jumbotron .container {
+        max-width: inherit;
+    }
+}
+@media screen and (max-width:575px){
+    .btn-color-end-div button {
+        margin: 5px auto;
+    }
+    .form-row.justify-content-jumbotron-date {
+        margin-bottom: 10px;
+    }
+
+}
