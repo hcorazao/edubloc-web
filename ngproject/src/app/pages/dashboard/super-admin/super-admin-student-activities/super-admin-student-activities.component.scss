@@ -36,8 +36,8 @@ a.nav-link {
 div.jumbotron.classes-jumbotron {
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 5px 0 5px 0;
-    margin: 0 40px 0 40px;
+    padding: 5px;
+    margin: 0;
 }
 
 .items-jumbotron-row-styles {
@@ -134,7 +134,15 @@ a.a-view-student {
     color: black;
     font-weight: normal;
 }
-
+.jumbotron.classes-jumbotron {
+    width: 100%;
+    margin: 0 auto !important;
+    padding: 10px 25px !important;
+}
+.hdr-rt-section a.nav-link {
+    margin: 0;
+    padding: 0;
+}
 /*----(26-10-2020)-New-Fixing----*/
 nav.custom-nav-app ul.navbar-nav li > a {
     border-top: 4px solid transparent;
@@ -142,23 +150,78 @@ nav.custom-nav-app ul.navbar-nav li > a {
 nav.custom-nav-app ul.navbar-nav li.active > a {
     border-top: 4px solid #ffffff;
 }
-nav.custom-nav-app{
-    padding-top:0;
-}
 nav.custom-nav-app ul.navbar-nav li{
-    margin:0 15px;
+    margin:0 30px;
 }
 table.custom-table-appfix {
     white-space: nowrap;
     width: 100%;
 }
 body{width:100%;}
-.jumbotron.classes-jumbotron .container {
-    max-width: inherit;
+table.custom-table-appfix th {
+    font-weight: normal;
+    color: #717171;
+}
+.custom-nav-app ul.navbar-nav li a {
+    color: #ffffff !important;
+}
+table.custom-table-appfix td.custom-icon-bg svg {
+    background: #6298FA;
+    width: 26px;
+    height: 26px;
+    padding: 5px;
+    border-radius: 4px;
+}
+.hdr-rt-section svg {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+nav.custom-nav-app {
+    padding: 0;
+}
+.jumbotron.classes-jumbotron form.form-inline input {
+    border-bottom: 2px solid #eeeeee;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+.jumbotron.classes-jumbotron .col-sm {
+    padding: 0;
+}
+.calender-date input.form-control {
+    padding-left: 25px;
+    font-size:12px;
+}
+.calender-date svg {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 10px;
+}
+.searchbox form img {
+    width: 16px;
+    position: absolute;
+}
+.searchbox form input {
+    font-size: 13px;
+    padding-left: 20px;
+    padding-right: 0;
+    margin: 0;
 }
 @media screen and (max-width:1199px){
     .jumbotron.classes-jumbotron .container {
         max-width: inherit;
+    }
+}
+@media screen and (max-width:767px){
+    nav.custom-nav-app ul.navbar-nav li {
+        margin: 0;
+    }
+    .calender-date > div {
+        float: left;
+        width: 20%;
     }
 }
 @media screen and (max-width:575px){
@@ -168,5 +231,7 @@ body{width:100%;}
     .form-row.justify-content-jumbotron-date {
         margin-bottom: 10px;
     }
-
+    nav.custom-nav-app .container {
+        padding: 0 15px;
+    }
 }

@@ -130,11 +130,8 @@ nav.custom-nav-app ul.navbar-nav li > a {
 nav.custom-nav-app ul.navbar-nav li.active > a {
     border-top: 4px solid #ffffff;
 }
-nav.custom-nav-app{
-    padding-top:0;
-}
 nav.custom-nav-app ul.navbar-nav li{
-    margin:0 15px;
+    margin:0 30px;
 }
 table.custom-table-appfix {
     white-space: nowrap;
@@ -154,9 +151,6 @@ body{width:100%;}
     margin-top: 0;
     margin-bottom: 0;
 }
-.jumbotron.classes-jumbotron .container {
-    max-width: inherit;
-}
 .custom-top-button {
     width: auto;
     max-width: 160px;
@@ -166,6 +160,37 @@ body{width:100%;}
 }
 .custom-top-button:first-child {
     margin-right: 0;
+    margin-left:0;
+}
+table.custom-table-appfix th {
+    font-weight: normal;
+    color: #717171;
+}
+.custom-nav-app ul.navbar-nav li a {
+    color: #ffffff !important;
+}
+.calender-date svg {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 10px;
+}
+.hdr-rt-section svg {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+.jumbotron.classes-jumbotron {
+    width: 100%;
+    margin: 0 auto !important;
+    padding: 10px 25px !important;
+}
+.hdr-rt-section a.nav-link {
+    margin: 0;
+    padding: 0;
+}
+nav.custom-nav-app {
+    padding: 0;
 }
 @media screen and (max-width:1199px){
 .jumbotron.classes-jumbotron .container {
@@ -175,6 +200,9 @@ body{width:100%;}
 @media screen and (max-width:767px){
 .custom-top-button {
     max-width: inherit;
+}
+nav.custom-nav-app ul.navbar-nav li {
+    margin: 0;
 }
 }
 @media screen and (max-width:575px){
@@ -187,5 +215,7 @@ body{width:100%;}
     .custom-top-button {
         width:100%;
     }
-
+    nav.custom-nav-app .container {
+        padding: 0 15px;
+    }
 }

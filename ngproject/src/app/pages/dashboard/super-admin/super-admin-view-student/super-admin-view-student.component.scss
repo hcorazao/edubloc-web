@@ -154,3 +154,45 @@ div.card-group.d-flex.usercard-collapse-1 {
 .cards-space-styles {
     padding: 10px 10px 0 0;
 }
+
+/*----(27-10-2020)----*/
+nav.custom-nav-app {
+    padding: 0;
+}
+nav.custom-nav-app ul.navbar-nav li{
+    margin: 0 30px;
+}
+.custom-modal-screen div.modal-body h5 {
+    text-align: center;
+    font-weight: normal;
+    line-height: 30px;
+}
+.modal-delete-student button {
+    width: 40%;
+    float: left;
+    height: 50px;
+    line-height: inherit;
+}
+.jumbotron.classes-jumbotron {
+    width: 100%;
+    margin: 0 auto !important;
+    padding: 10px 25px !important;
+}
+.hdr-rt-section svg{
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+.custom-nav-app ul.navbar-nav li a{
+    color: #ffffff !important;
+}
+nav.custom-nav-app ul.navbar-nav li > a {
+    border-top: 4px solid transparent;
+}
+nav.custom-nav-app ul.navbar-nav li.active > a {
+    border-top: 4px solid #ffffff;
+}
+.modal-delete-student button:first-child {
+    background: none;
+    color: #000;
+}

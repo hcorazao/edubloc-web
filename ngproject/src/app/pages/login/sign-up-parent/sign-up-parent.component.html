@@ -14,7 +14,7 @@
             <div class="col rectangle-109-white">
                 <div class="container">
                     <div class="row row-go-to-the-link top-heading-form">
-                        <p><span>Back to?</span><a class="btn btn-link" (click)="gotoSignIn()" style="cursor:pointer;">Sign In</a></p>
+                        <p><span>Back to</span><a class="btn btn-link" (click)="gotoSignIn()" style="cursor:pointer;">Sign In</a></p>
                     </div>
                     <div class="row form-align-styles">
                         <form>
@@ -61,35 +61,40 @@
                                     <div>Password is required</div>
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group gender-column">
                                 <p>Gender</p>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                               <div  class="gender-box">
+                                <div class="form-check active">
                                     <label class="form-check-label" for="exampleRadios1">
-                                        Male
+                                        Male<img _ngcontent-aqo-c110="" src="./assets/img/check.png" class="check">
                                     </label>
+                                   <!-- <input _ngcontent-vtw-c110="" type="checkbox" class="custom-form-checkbox">-->
+                                       
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                                     <label class="form-check-label" for="exampleRadios1">
-                                        Female
+                                        Famale
                                     </label>
+                                    <!--<input _ngcontent-vtw-c110="" type="checkbox" class="custom-form-checkbox">-->
+                                  
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                    <label class="form-check-label" for="exampleRadios1">
+                                     <label class="form-check-label" for="exampleRadios1">
                                         Transgender
                                     </label>
+                                   <!-- <input _ngcontent-vtw-c110="" type="checkbox" class="custom-form-checkbox">-->
+                                   
+                                </div>
                                 </div>
                             </div>
-                            <div class="form-group form-line-bottom ">
+                            <div class="form-group form-line-bottom student-num">
                                 <label for="Student Phone Number">Student Phone Number</label>
                                 <input type="number" formControlName="student phone number" class="form-control input-lineal " placeholder="e.g. +82 99 999-99-99" />
                                 <div class="invalid-feedback ">
                                     <div>Student Phone Number is required</div>
                                 </div>
                             </div>
-                            <div class="form-group form-line-bottom ">
+                            <div class="form-group form-line-bottom student-num">
                                 <label for="Student Full Name">Student Full Name</label>
                                 <input type="text " formControlName="student fullname" class="form-control input-lineal " placeholder="e.g. Jon Song" />
                                 <div class="invalid-feedback ">
