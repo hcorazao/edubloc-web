@@ -7,6 +7,10 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
+    path: 'teacher',
+    loadChildren: () => import('./teacher-view-student/teacher-view-student.module').then ( m => m.TeacherViewStudentModule)
+  },
+  {
     path: 'teacher-view-student',
     loadChildren: () => import('./teacher-view-student/teacher-view-student.module').then ( m => m.TeacherViewStudentModule)
   },

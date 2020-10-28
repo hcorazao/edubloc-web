@@ -7,6 +7,10 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
+    path: 'super-admin',
+    loadChildren: () => import('./super-admin-view-student/super-admin-view-student.module').then ( m => m.SuperAdminViewStudentModule)
+  },
+  {
     path: 'super-admin-view-student',
     loadChildren: () => import('./super-admin-view-student/super-admin-view-student.module').then ( m => m.SuperAdminViewStudentModule)
   },
