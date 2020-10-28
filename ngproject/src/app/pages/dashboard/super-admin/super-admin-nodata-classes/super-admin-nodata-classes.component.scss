@@ -1,5 +1,6 @@
 $white: #ffffff;
 $Accent-blue: #175FFf;
+$gris: #f1f1f1;
 $Accent-fiolet: #F6A521;
 $Logo-gradient: linear-gradient(226.27deg, #EAA675 0%, #EA7D75 100%);
 html,
@@ -8,6 +9,7 @@ body {
     flex-direction: column;
     height: 100vh;
     width: 100vw;
+    background-color: $gris;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
 }
@@ -218,7 +220,7 @@ nav.custom-nav-app {
     position: absolute;
     width: 180px;
     height: 76px;
-    background: #f1f1f1;
+    background: #fff;
     border-radius: 5px; 
     font-style: normal;
     font-weight: bold;
