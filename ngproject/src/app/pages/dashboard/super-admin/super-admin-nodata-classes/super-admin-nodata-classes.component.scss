@@ -193,6 +193,46 @@ table.custom-table-appfix th {
 nav.custom-nav-app {
     padding: 0;
 }
+.content-data {
+    height: 50vh !important;
+}
+.image-nodata {
+    width: 347px;
+    height: 332px;
+    margin-top: 10px;
+}
+
+.text-nodata {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    line-height: 34px;
+    letter-spacing: 0.337647px;
+    color: rgba(17, 7, 37, 0.6);
+}
+.rectangle-btn {
+    position: absolute;
+    bottom: 5vh;
+    right: 0;
+    position: absolute;
+    width: 180px;
+    height: 76px;
+    background: #f1f1f1;
+    border-radius: 5px; 
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 0.337647px;
+    color: #110725;
+}
+.arrow-icon {
+    width: 18px;
+    height: 14.97px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
 
 .btn-light:hover {
     color: #212529;
@@ -215,6 +255,10 @@ nav.custom-nav-app {
 nav.custom-nav-app ul.navbar-nav li {
     margin: 0;
 }
+.image-nodata {
+    width: 36.2vw;
+    height: 34.4vw;
+}
 }
 @media screen and (max-width:575px){
     .btn-color-end-div button {
@@ -228,5 +272,9 @@ nav.custom-nav-app ul.navbar-nav li {
     }
     nav.custom-nav-app .container {
         padding: 0 15px;
+    }
+    .image-nodata {
+        width: 46.2vw;
+        height: 44.4vw;
     }
 }

@@ -28,6 +28,16 @@ const routes: Routes = [
     path: 'super-admin-view-student-activities',
     // tslint:disable-next-line: max-line-length
     loadChildren: () => import('./super-admin-view-student-activities/super-admin-view-student-activities.module').then ( m => m.SuperAdminViewStudentActivitiesModule)
+  },
+  {
+    path: 'super-admin-nodata-classes',
+    // tslint:disable-next-line: max-line-length
+    loadChildren: () => import('./super-admin-nodata-classes/super-admin-nodata-classes.module').then ( m => m.SuperAdminNodataClassesModule)
+  },
+  {
+    path: 'super-admin-nodata-student',
+    // tslint:disable-next-line: max-line-length
+    loadChildren: () => import('./super-admin-nodata-student/super-admin-nodata-student.module').then ( m => m.SuperAdminNodataStudentModule)
   }
 ];
 
