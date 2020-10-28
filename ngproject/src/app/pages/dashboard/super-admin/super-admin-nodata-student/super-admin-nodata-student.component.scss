@@ -16,10 +16,7 @@ body {
 .navbar-space-style {
     display: flex;
 }
-a {
-    text-decoration: none !important;
-    color: black;
-}
+
 .active-link {
     border-top: blanchedalmond;
     border-top: 4px solid;
@@ -128,23 +125,21 @@ a.a-view-student {
     font-weight: normal;
 }
 
-.form-control {
-    border: inherit !important;
-    border-bottom: 1px solid rgba(17, 7, 37, 0.3)!important;
-    border-radius: 0 !important;
-    background-image: url('../../../../../assets/img/search.svg');
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 14.5px 14.5px;
-    padding: .375rem .4rem .375rem 1.3rem !important;
-    outline: none;
-    text-decoration: none;
+.content-data {
+    height: 50vh !important;
+}
+.image-nodata {
+    width: 347px;
+    height: 332px;
+    margin-top: 10px;
 }
 
-.form-control:focus {
-    outline:none !important;
-    outline-width: 0 !important;
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
+.text-nodata {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    line-height: 34px;
+    letter-spacing: 0.337647px;
+    color: rgba(17, 7, 37, 0.6);
 }

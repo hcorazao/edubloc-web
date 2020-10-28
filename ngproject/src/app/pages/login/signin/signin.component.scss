@@ -156,6 +156,17 @@ div.form-group.align-btn-accent-fiolet {
     padding: 8px 0 0 0;
     float: left;
 }
+.text-style {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.38px;
+    color: #110725;
+}
+
 @media screen and (max-width:767px){
     .rectangle-109-blue {
         flex: auto;
