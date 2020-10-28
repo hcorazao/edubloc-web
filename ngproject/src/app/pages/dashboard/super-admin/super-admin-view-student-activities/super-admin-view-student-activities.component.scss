@@ -31,7 +31,15 @@ a.nav-link {
     text-decoration: none;
     color: $white;
 }
-
+nav.custom-nav-app ul.navbar-nav li > a {
+    border-top: 4px solid transparent;
+}
+nav.custom-nav-app ul.navbar-nav li.active > a {
+    border-top: 4px solid #ffffff;
+}
+nav.custom-nav-app ul.navbar-nav li{
+    margin:0 30px;
+}
 // jumbotron classes *************************************************
 div.jumbotron.classes-jumbotron {
     background-color: #ffffff;
@@ -111,7 +119,9 @@ a.a-jumbotron {
     background-color: #F46565;
     border: none;
 }
-
+nav.custom-nav-app {
+    padding: 0;
+}
 // card user ***********************************************************
 div.card-group.align-items-center {
     padding: 10px 0 10px 0;
