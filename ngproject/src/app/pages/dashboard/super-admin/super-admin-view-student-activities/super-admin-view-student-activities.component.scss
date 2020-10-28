@@ -1,12 +1,13 @@
 $white: #ffffff;
 $Accent-blue: #175FFf;
+$gris: #f1f1f1;
 $Accent-fiolet: #F6A521;
 $Logo-gradient: linear-gradient(226.27deg, #EAA675 0%, #EA7D75 100%);
 html,
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    background-color: $gris;
     width: 100vw;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
