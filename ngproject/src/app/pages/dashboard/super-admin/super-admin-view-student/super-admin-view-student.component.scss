@@ -1,14 +1,15 @@
 $white: #ffffff;
 $Accent-blue: #175FFf;
+$gris:#f1f1f1;
 $Accent-fiolet: #F6A521;
 $Logo-gradient: linear-gradient(226.27deg, #EAA675 0%, #EA7D75 100%);
 html,
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    background-color: $gris;
     width: 100vw;
-    margin: 0 0 0 0;
+    margin:0px;
     padding: 0 0 0 0;
 }
 
@@ -144,7 +145,9 @@ div.card-group.d-flex.usercard-collapse-1 {
 .card-styles-items-user {
     padding: 5px 5px 10px 10px;
 }
-
+.card-title {
+    margin-bottom: 0rem !important;
+}
 .a-styles-user-card {
     text-decoration: none;
     color: black;
@@ -152,7 +155,7 @@ div.card-group.d-flex.usercard-collapse-1 {
 
 // card ****************************************************************
 .cards-space-styles {
-    padding: 10px 10px 0 0;
+    padding: 0px 10px 10px 0;
 }
 
 /*----(27-10-2020)----*/
@@ -195,4 +198,46 @@ nav.custom-nav-app ul.navbar-nav li.active > a {
 .modal-delete-student button:first-child {
     background: none;
     color: #000;
+}
+.profile-general {
+    width: 300px;
+}
+.card-style {
+    width: 280px;
+    margin: 0 10px 10px 0;
+
+}
+.container-general {
+    margin-left: .2vw;
+}
+@media screen and (max-width:767px){
+    .cards-space-styles {
+        margin: 0 0 10px 0;
+    }   
+    .card-style {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .profile-general {
+        width: 100%;
+    }
+    .container-general {
+        margin-left: 0vw;
+    }
+}
+@media screen and (max-width:575px){
+    .cards-space-styles {
+        padding: 10px 10px 0px 0;
+
+    }  
+    .card-style {
+        width: 100% !important;
+        margin: 10px 0 0px 0 !important;
+    } 
+    .container-general {
+        margin-left: 0vw;
+    }
+    .profile-general {
+        width: 100%;
+    }
 }

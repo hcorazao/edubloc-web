@@ -1,13 +1,14 @@
 $white: #ffffff;
 $Accent-blue: #175FFf;
 $Accent-fiolet: #F6A521;
+$gris: #f1f1f1;
 $Logo-gradient: linear-gradient(226.27deg, #EAA675 0%, #EA7D75 100%);
 html,
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     width: 100vw;
+    background-color: $gris;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
 }
@@ -155,7 +156,9 @@ nav.custom-nav-app ul.navbar-nav li{
 }
 table.custom-table-appfix {
     white-space: nowrap;
+    background-color: #ffffff;
     width: 100%;
+    border-radius: 5px;
 }
 body{width:100%;}
 table.custom-table-appfix th {
