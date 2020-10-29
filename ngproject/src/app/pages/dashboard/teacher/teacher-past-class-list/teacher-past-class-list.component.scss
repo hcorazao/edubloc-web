@@ -33,6 +33,9 @@ a.nav-link {
     text-decoration: none;
     color: $white;
 }
+nav.custom-nav-app {
+    padding: 0;
+}
 
 // jumbotron classes *************************************************
 div.jumbotron.classes-jumbotron {
@@ -122,6 +125,10 @@ a.a-view {
 }
 .table-responsive {
     background-color: #ffffff;
+    width: 76vw;
+}
+.navbar-personal {
+    padding: 0 11vw 0 11vw !important;
 }
 @media screen and (max-width:1200px){
     .items-jumbotron-row-styles {
@@ -158,5 +165,11 @@ a.a-view {
     }
 }
 @media screen and (max-width:575px){
-   
+    .table-responsive {
+        background-color: #ffffff;
+        width: 95vw;
+    } 
+    .navbar-personal {
+        padding: 0 2vw 0 2vw;
+    } 
 }
