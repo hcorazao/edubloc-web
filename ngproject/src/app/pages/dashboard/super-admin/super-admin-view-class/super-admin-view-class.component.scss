@@ -1,12 +1,13 @@
 $white: #ffffff;
 $Accent-blue: #175FFf;
 $Accent-fiolet: #F6A521;
+$gris: #f1f1f1;
 $Logo-gradient: linear-gradient(226.27deg, #EAA675 0%, #EA7D75 100%);
 html,
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    background-color: $gris;
     width: 100vw;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
@@ -35,6 +36,19 @@ a.nav-link {
     color: $white;
 }
 
+nav.custom-nav-app ul.navbar-nav li > a {
+    border-top: 4px solid transparent;
+}
+nav.custom-nav-app ul.navbar-nav li.active > a {
+    border-top: 4px solid #ffffff;
+}
+nav.custom-nav-app ul.navbar-nav li{
+    margin:0 30px;
+}
+
+nav.custom-nav-app {
+    padding: 0;
+}
 // jumbotron classes *************************************************
 div.jumbotron.classes-jumbotron {
     background-color: #ffffff;
@@ -65,6 +79,10 @@ div.jumbotron.classes-jumbotron {
 
 .tabla-jumbotron-class {
     width: fit-content;
+}
+
+.table-responsive {
+    background-color: #ffffff;
 }
 
 a.a-jumbotron {
@@ -111,22 +129,22 @@ a.a-jumbotron {
 }
 
 // tabla clases ***********************************************************
-svg.bi.bi-arrow-right-short {
-    color: $Accent-fiolet;
-}
+// svg.bi.bi-arrow-right-short {
+//     color: $Accent-fiolet;
+// }
 
-a.a-view {
-    text-decoration: none;
-    color: $Accent-fiolet;
-    font-weight: normal;
-}
+// a.a-view {
+//     text-decoration: none;
+//     color: $Accent-fiolet;
+//     font-weight: normal;
+// }
 
-a.a-view-student {
-    text-decoration: none;
-    font-weight: bolder;
-    color: black;
-    font-weight: normal;
-}
+// a.a-view-student {
+//     text-decoration: none;
+//     font-weight: bolder;
+//     color: black;
+//     font-weight: normal;
+// }
 
 .form-control {
     border: inherit !important;
@@ -147,4 +165,131 @@ a.a-view-student {
     box-shadow: none;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
+}
+
+svg.bi.bi-arrow-right-short {
+    color: $Accent-fiolet;
+}
+
+a.a-view {
+    text-decoration: none;
+    color: $Accent-fiolet;
+    font-weight: normal;
+}
+
+a.a-view-student {
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    font-weight: normal;
+}
+.jumbotron.classes-jumbotron {
+    width: 100%;
+    margin: 0 auto !important;
+    padding: 10px 25px !important;
+}
+.hdr-rt-section a.nav-link {
+    margin: 0;
+    padding: 0;
+}
+/*----(26-10-2020)-New-Fixing----*/
+nav.custom-nav-app ul.navbar-nav li > a {
+    border-top: 4px solid transparent;
+}
+nav.custom-nav-app ul.navbar-nav li.active > a {
+    border-top: 4px solid #ffffff;
+}
+nav.custom-nav-app ul.navbar-nav li{
+    margin:0 30px;
+}
+table.custom-table-appfix {
+    white-space: nowrap;
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 5px;
+}
+body{width:100%;}
+table.custom-table-appfix th {
+    font-weight: normal;
+    color: #717171;
+}
+.custom-nav-app ul.navbar-nav li a {
+    color: #ffffff !important;
+}
+table.custom-table-appfix td.custom-icon-bg svg {
+    background: #6298FA;
+    width: 26px;
+    height: 26px;
+    padding: 5px;
+    border-radius: 4px;
+}
+.hdr-rt-section svg {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+nav.custom-nav-app {
+    padding: 0;
+}
+.jumbotron.classes-jumbotron form.form-inline input {
+    border-bottom: 2px solid #eeeeee;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+.jumbotron.classes-jumbotron .col-sm {
+    padding: 0;
+}
+.calender-date input.form-control {
+    padding-left: 25px;
+    font-size:12px;
+}
+.calender-date svg {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 10px;
+}
+.searchbox form img {
+    width: 16px;
+    position: absolute;
+}
+.searchbox form input {
+    font-size: 13px;
+    padding-left: 20px;
+    padding-right: 0;
+    margin: 0;
+}
+
+@media screen and (max-width:1199px){
+    .jumbotron.classes-jumbotron .container {
+        max-width: inherit;
+    }
+}
+@media screen and (max-width:767px){
+    .form-control {
+        width: 100%;
+    }
+    nav.custom-nav-app ul.navbar-nav li {
+        margin: 0;
+    }
+    .calender-date > div {
+        float: left;
+        width: 20%;
+    }
+}
+@media screen and (max-width:575px){
+    .form-control {
+        width: 100%;
+    }
+    .btn-color-end-div button {
+        margin: 5px auto;
+    }
+    .form-row.justify-content-jumbotron-date {
+        margin-bottom: 10px;
+    }
+    nav.custom-nav-app .container {
+        padding: 0 15px;
+    }
 }
