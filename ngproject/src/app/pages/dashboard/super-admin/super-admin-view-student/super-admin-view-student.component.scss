@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     background-color: $gris;
     width: 100vw;
-    margin: 0 0 0 0;
+    margin:0px;
     padding: 0 0 0 0;
 }
 
@@ -198,4 +198,46 @@ nav.custom-nav-app ul.navbar-nav li.active > a {
 .modal-delete-student button:first-child {
     background: none;
     color: #000;
+}
+.profile-general {
+    width: 300px;
+}
+.card-style {
+    width: 280px;
+    margin: 0 10px 10px 0;
+
+}
+.container-general {
+    margin-left: .2vw;
+}
+@media screen and (max-width:767px){
+    .cards-space-styles {
+        margin: 0 0 10px 0;
+    }   
+    .card-style {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .profile-general {
+        width: 100%;
+    }
+    .container-general {
+        margin-left: 0vw;
+    }
+}
+@media screen and (max-width:575px){
+    .cards-space-styles {
+        padding: 10px 10px 0px 0;
+
+    }  
+    .card-style {
+        width: 100% !important;
+        margin: 10px 0 0px 0 !important;
+    } 
+    .container-general {
+        margin-left: 0vw;
+    }
+    .profile-general {
+        width: 100%;
+    }
 }
