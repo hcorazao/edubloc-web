@@ -1,6 +1,7 @@
 $white: #ffffff;
 $Accent-blue: #175FFf;
 $Accent-fiolet: #F6A521;
+$gris:#f1f1f1;
 $Logo-gradient: linear-gradient(226.27deg, #EAA675 0%, #EA7D75 100%);
 html,
 body {
@@ -9,6 +10,7 @@ body {
     height: 100vh;
     width: 100vw;
     margin: 0 0 0 0;
+    background-color: $gris;
     padding: 0 0 0 0;
 }
 
@@ -37,7 +39,7 @@ div.jumbotron.classes-jumbotron {
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 5px 0 5px 0;
-    margin: 0 40px 0 40px;
+    margin: 0 12vw 0 12vw;
 }
 
 .items-jumbotron-row-styles {
@@ -45,6 +47,7 @@ div.jumbotron.classes-jumbotron {
     vertical-align: middle;
     align-content: center;
     align-items: center;
+    width: 25vw;
 }
 
 .justify-content-jumbotron-date {
@@ -116,4 +119,44 @@ a.a-view {
     text-decoration: none;
     color: $Accent-fiolet;
     font-weight: normal;
+}
+.table-responsive {
+    background-color: #ffffff;
+}
+@media screen and (max-width:1200px){
+    .items-jumbotron-row-styles {
+        width: 30vw;
+    }
+}
+@media screen and (max-width:991px){
+    .active-link {
+        border-top: 0px solid !important;
+        border-bottom: 4px solid;
+        width: 145px;
+    }
+    .items-jumbotron-row-styles {
+        width: 50vw;
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .container-general {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:767px){
+    div.jumbotron.classes-jumbotron {
+        margin: 0 3vw 0 3vw;
+    }
+    .items-jumbotron-row-styles {
+        width: 63vw;
+    }
+}
+@media screen and (max-width:575px){
+   
 }
