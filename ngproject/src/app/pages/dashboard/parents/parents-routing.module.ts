@@ -7,7 +7,7 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: 'parents-view',
+    path: 'parents',
     loadChildren: () => import('./parents-view-student/parents-view-student.module').then ( m => m.ParentsViewStudentModule)
   },
 ];
