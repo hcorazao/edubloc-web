@@ -176,6 +176,9 @@ div.card-group.d-flex.usercard-collapse-1 {
 .align-container {
     margin: 0 0 0 10em
 }
+.panel-heading, .card-body {
+    border-bottom: 1px solid #EBEFF2;
+}
 @media screen and (max-width:1200px){
     .navbar-space-style {
         padding: 0 5em;

@@ -210,6 +210,9 @@ nav.custom-nav-app ul.navbar-nav li.active > a {
 .container-general {
     margin-left: .2vw;
 }
+.panel-heading, .card-body {
+    border-bottom: 1px solid #EBEFF2;
+}
 @media screen and (max-width:767px){
     .cards-space-styles {
         margin: 0 0 10px 0;

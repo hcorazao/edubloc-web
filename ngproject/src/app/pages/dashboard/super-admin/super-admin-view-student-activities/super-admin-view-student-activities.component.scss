@@ -194,6 +194,9 @@ div.card-group.d-flex.usercard-collapse-1 {
         margin-left: 0vw;
     }
 }
+.panel-heading, .card-body {
+    border-bottom: 1px solid #EBEFF2;
+}
 @media screen and (max-width:575px){
     .cards-space-styles {
         padding: 10px 10px 0px 0;

@@ -1,11 +1,13 @@
 $white: #ffffff;
 $Accent-blue: #175FFf;
+$gris: #f1f1f1;
 $Accent-fiolet: #F6A521;
 $Logo-gradient: linear-gradient(226.27deg, #EAA675 0%, #EA7D75 100%);
 html,
 body {
     display: flex;
     flex-direction: column;
+    background-color: $gris;
     height: 100vh;
     width: 100vw;
     margin: 0 0 0 0;
@@ -37,7 +39,7 @@ div.jumbotron.classes-jumbotron {
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 5px 0 5px 0;
-    margin: 0 40px 0 40px;
+    margin: 0 12vw 0 12vw;
 }
 
 .items-jumbotron-row-styles {
@@ -73,6 +75,28 @@ a.a-jumbotron {
     border-bottom: #000000 solid 1px;
     border-radius: 1PX;
     object-position: left;
+}
+
+.form-control {
+    border: inherit !important;
+    border-bottom: 1px solid rgba(17, 7, 37, 0.3)!important;
+    border-radius: 0 !important;
+    background-image: url('../../../../../assets/img/search.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 14.5px 14.5px;
+    padding: .375rem .4rem .375rem 1.3rem !important;
+    outline: none;
+    text-decoration: none;
+    width: 254px !important;
+}
+
+.form-control:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
 }
 
 .input-styles-search {
@@ -116,4 +140,91 @@ a.a-view {
     text-decoration: none;
     color: $Accent-fiolet;
     font-weight: normal;
+}
+
+.navbar-personal {
+    padding: 0 11vw 0 11vw !important;
+}
+.table-responsive {
+    width: 76vw;
+}
+.general-table {
+    background-color: #fff;
+    width: 100%;
+}
+.level-classroom{
+    width: 25%;
+}
+.form-search {
+    width: 75%;
+}
+@media screen and (max-width:1200px){
+    .items-jumbotron-row-styles {
+        width: 30vw;
+    }
+    div.jumbotron.classes-jumbotron {
+        margin: 0 12vw 0 12vw;
+    }
+    .level-classroom{
+        width: 30%;
+    }
+    .form-search {
+        width: 70%;
+    }
+}
+@media screen and (max-width:991px){
+    .active-link {
+        border-top: 0px solid !important;
+        border-bottom: 4px solid;
+        width: 145px;
+    }
+    .level-classroom{
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: left;
+    }
+    .form-search {
+        width: 100%;
+        justify-content: left !important;
+    }
+    .items-jumbotron-row-styles {
+        width: 50vw;
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .table-responsive {
+        width: 100%;
+    } 
+}
+@media screen and (max-width:767px){
+    div.jumbotron.classes-jumbotron {
+        margin: 0 3vw 0 3vw;
+    }
+    .items-jumbotron-row-styles {
+        width: 63vw;
+    }
+    .table-responsive {
+        width: 100%;
+    } 
+    .general-table {
+        width: 118vw;
+    }
+}
+@media screen and (max-width:575px){
+    .table-responsive {
+        width: 100%;
+    } 
+    .general-table {
+        width: 260vw;
+    }
+    .navbar-personal {
+        padding: 0 2vw 0 2vw;
+    } 
 }
