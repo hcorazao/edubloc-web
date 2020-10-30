@@ -77,7 +77,13 @@ a.a-jumbotron {
     text-decoration: none;
     color: black;
 }
-
+.calendar-style {
+    background-image: url('../../../../../assets/img/icons/calendar.svg');
+    background-repeat: no-repeat;
+    background-position: 12px;
+    padding-left: 1.9rem !important;
+    width: 158px !important;
+}
 .form-line-bottom {
     border-bottom: #000000 solid 1px;
     border-radius: 1PX;
@@ -179,6 +185,10 @@ div.card-group.d-flex.usercard-collapse-1 {
 .container-general {
     margin-left: 3vw;
 }
+.activities-general {
+    width: 158px;
+}
+
 @media screen and (max-width:767px){
     .cards-space-styles {
         margin: 0 0 10px 0;
@@ -198,6 +208,9 @@ div.card-group.d-flex.usercard-collapse-1 {
     border-bottom: 1px solid #EBEFF2;
 }
 @media screen and (max-width:575px){
+    .btn-color-end-div {
+        justify-content: center;
+    }
     .cards-space-styles {
         padding: 10px 10px 0px 0;
 
@@ -208,9 +221,12 @@ div.card-group.d-flex.usercard-collapse-1 {
     } 
     
     .profile-general {
-        width: 100%;
+        width: 96%;
     }
     .container-general {
         margin-left: 0vw;
+    }
+    .activities-general {
+        width: 80%;
     }
 }

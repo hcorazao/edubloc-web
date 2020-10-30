@@ -48,8 +48,8 @@
     <div class="container">
     <div class="jumbotron classes-jumbotron">
 
-            <div class="row items-jumbotron-row-styles">
-                <div class="col-sm">
+            <div class="d-flex align-items-center align-content-center justify-content-center flex-wrap">
+                <div style="width:200px;">
                     <h5>
                         <a class="a-jumbotrom" (click)="gotoSuperAdminStudentActivities()" style="cursor:pointer;">
                             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi ml-4 bi-arrow-left-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -58,29 +58,32 @@
                         </a>
                     </h5>
                 </div>
-                <div class="col-sm btn-color-end-div">
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary right btn-deletefromclass mr-4" data-toggle="modal" data-target="#staticBackdrop">
-                        Delete from class
-                    </button>
-                    <!-- Modal -->
-                    <div class="modal fade custom-modal-screen" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="staticBackdropLabel">Delete student</h5>
-                                </div>
-                                <div class="modal-body">
-                                    <h5 class="modal-subtitle text-center">
-                                        Are you sure you want to remove this student from the class?
-                                    </h5>
-                                </div>
-                                <div class="modal-footer modal-delete-student">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-                                    <button type="button" class="btn btn-primary btn-modal-color">Yes, delete</button>
-                                </div>
-                            </div>
+                <div class="my-2  activities-general">
+                    <div class="dropdown mr-1 d-flex">
+                        <button type="button" class="btn btn-light dropdown-toggle block-size-style" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                            Activities
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
                         </div>
+                    </div>
+                </div>
+                <div class="col-sm custom-md-wdth">
+                    <div class="form-row d-flex align-content-center align-items-center justify-content-center flex-nowrap calender-date">
+                        <div class="mr-2 my-2 d-flex justify-content-end" style="width: 40px;">
+                            From
+                        </div>
+                        <input class="calendar-style  form-control" type="search" placeholder="YYYY/MM/DD" aria-label="Search">
+                    </div>
+                </div>
+                <div class="col-sm custom-md-wdth">
+                    <div class="form-row d-flex align-content-center align-items-center justify-content-center flex-nowrap calender-date">
+                        <div class="mr-2  my-2 d-flex justify-content-end" style="width: 40px;">
+                            To
+                        </div>
+                        <input class="calendar-style  form-control" type="search" placeholder="YYYY/MM/DD" aria-label="Search">
                     </div>
                 </div>
             </div>
