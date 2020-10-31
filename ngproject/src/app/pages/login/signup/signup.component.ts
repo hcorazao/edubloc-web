@@ -27,4 +27,7 @@ export class SignupComponent implements OnInit {
     this.router.navigate(['/sign-up-parent']);
   }
 
+  gotoTeacher() {
+    this.router.navigate(['/dashboard/teacher']);
+  }
 }
