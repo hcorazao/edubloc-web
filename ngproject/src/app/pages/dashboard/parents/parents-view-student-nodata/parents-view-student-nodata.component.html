@@ -1,5 +1,5 @@
 <nav class="navbar-space-style navbar navbar-expand-lg navbar-dark bg-primary custom-nav-app">
-    <div class="container">
+    <div class="container header-navbar">
     <a class="navbar-brand" href="#">
         <img src="assets/img/logo-menu.svg" width="175" height="30" alt="" loading="lazy">
     </a>
@@ -7,9 +7,9 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-lg-around" id="navbarNavAltMarkup">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link active active-link" (click)="gotoSuperAdminClassrooms()" style="cursor:pointer;" routerLinkActive="">
+        <!-- <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link"  style="cursor:pointer;" routerLinkActive="">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" style="&#10;">
                         <g clip-path="url(#clip0)">
                         <path d="M30.4 16H29.8667V3.2H30.4C31.2836 3.2 32 2.48362 32 1.6C32 0.716375 31.2837 0 30.4 0H1.6C0.716313 0 0 0.716313 0 1.6C0 2.48369 0.716313 3.2 1.6 3.2H2.13331V16H1.6C0.716313 16 0 16.7164 0 17.6C0 18.4836 0.716313 19.2 1.6 19.2H30.4C31.2836 19.2 32 18.4836 32 17.6C32 16.7164 31.2837 16 30.4 16ZM1.6 2.13331C1.30562 2.13294 1.06706 1.89438 1.06669 1.6C1.06706 1.30562 1.30562 1.06706 1.6 1.06669H30.4C30.6946 1.06669 30.9333 1.30544 30.9333 1.6C30.9333 1.89456 30.6946 2.13331 30.4 2.13331H1.6ZM28.8 3.2V16H3.2V3.2H28.8ZM30.4 18.1333H1.6C1.30544 18.1333 1.06669 17.8946 1.06669 17.6C1.06669 17.3054 1.30544 17.0667 1.6 17.0667H30.4C30.6944 17.0671 30.9329 17.3056 30.9333 17.6C30.9329 17.8944 30.6944 18.1329 30.4 18.1333Z" fill="white" stroke="white" stroke-width="0.3"/>
@@ -24,17 +24,17 @@
                         </svg> Classrooms
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" (click)="gotoSuperAdminStudentActivities()" style="cursor:pointer;" routerLinkActive="">
+            <li class="nav-item active">
+                <a class="nav-link active active-link" style="cursor:pointer;" routerLinkActive="">
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="26" viewBox="0 0 28 26" fill="none">
                         <path d="M10 26C9.80257 25.999 9.60986 25.9396 9.44614 25.8293C9.28242 25.719 9.15502 25.5626 9.08 25.38L4.33 14H0V12H5C5.19743 12.001 5.39014 12.0604 5.55386 12.1707C5.71758 12.2811 5.84498 12.4374 5.92 12.62L10 22.28L18.06 0.650005C18.1315 0.458605 18.2599 0.293703 18.428 0.177493C18.5961 0.0612827 18.7957 -0.000658432 19 5.27853e-06C19.2062 0.00360824 19.4063 0.0708859 19.5728 0.192621C19.7393 0.314355 19.864 0.484592 19.93 0.680005L23.72 12H28V14H23C22.7904 14.0005 22.5858 13.9352 22.4154 13.8132C22.2449 13.6911 22.1171 13.5186 22.05 13.32L19 4.00001L10.94 25.35C10.8685 25.5414 10.7401 25.7063 10.572 25.8225C10.4039 25.9387 10.2043 26.0007 10 26Z" fill="#E4E4E4"/>
                         </svg> Student Activities
                 </a>
             </li>
-        </ul>
+        </ul> -->
     </div>
         <div class="my-2 my-lg-0 hdr-rt-section">
-            <a class="nav-link" (click)="gotoSignIn()" style="cursor:pointer;">
+            <a class="nav-link"  style="cursor:pointer;">
                 Administrator
                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
@@ -45,19 +45,11 @@
         </div>
 </nav>
 <body>
-    <div class="container">
+    <div class="container mb-5">
     <div class="jumbotron classes-jumbotron">
 
             <div class="d-flex align-items-center align-content-center justify-content-center flex-wrap">
-                <div style="width:200px;">
-                    <h5>
-                        <a class="a-jumbotrom" (click)="gotoSuperAdminStudentActivities()" style="cursor:pointer;">
-                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi ml-4 bi-arrow-left-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
-                            </svg> Wang Song
-                        </a>
-                    </h5>
-                </div>
+                
                 <div class="my-2  activities-general">
                     <div class="dropdown mr-1 d-flex">
                         <button type="button" class="btn btn-light dropdown-toggle block-size-style" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
@@ -70,7 +62,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm custom-md-wdth">
+                <div class="custom-md-wdth">
                     <div class="form-row d-flex align-content-center align-items-center justify-content-center flex-nowrap calender-date">
                         <div class="mr-2 my-2 d-flex justify-content-end" style="width: 40px;">
                             From
@@ -78,7 +70,7 @@
                         <input class="calendar-style  form-control" type="search" placeholder="YYYY/MM/DD" aria-label="Search">
                     </div>
                 </div>
-                <div class="col-sm custom-md-wdth">
+                <div class="custom-md-wdth">
                     <div class="form-row d-flex align-content-center align-items-center justify-content-center flex-nowrap calender-date">
                         <div class="mr-2  my-2 d-flex justify-content-end" style="width: 40px;">
                             To
@@ -228,114 +220,10 @@
             </div>
             <div class="col">
                 <div class="container">
-                    <div class="d-flex flex-wrap flex-row">
-                            <div class="card card-style">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-start align-content-center align-items-center flex-row"> 
-                                        <img src="assets/img/icons/general.svg" class="float-left img-user-icons">
-                                        <h5 class="card-title">Nursing home - Warm heart</h5>
-                                    </div>
-                                    <br>
-                                    <h5 class="card-title">Address</h5>
-                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
-                                    <h5 class="card-title">Activity Timeline</h5>
-                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
-                                </div>
-                            </div>
-
-                            <div class="card card-style">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-start align-content-center align-items-center flex-row"> 
-                                        <img src="assets/img/icons/general.svg" class="float-left img-user-icons">
-                                        <h5 class="card-title">Nursing home - Warm heart</h5>
-                                    </div>
-                                    <br>
-                                    <h5 class="card-title">Address</h5>
-                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
-                                    <h5 class="card-title">Activity Timeline</h5>
-                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
-                                </div>
-                            </div>
-                            <div class="card card-style">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-start align-content-center align-items-center flex-row"> 
-                                        <img src="assets/img/icons/general.svg" class="float-left img-user-icons">
-                                        <h5 class="card-title">Nursing home - Warm heart</h5>
-                                    </div>
-                                    <br>
-                                    <h5 class="card-title">Address</h5>
-                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
-                                    <h5 class="card-title">Activity Timeline</h5>
-                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
-                                </div>
-                            </div>
-                            <div class="card card-style">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-start align-content-center align-items-center flex-row"> 
-                                        <img src="assets/img/icons/general.svg" class="float-left img-user-icons">
-                                        <h5 class="card-title">Nursing home - Warm heart</h5>
-                                    </div>
-                                    <br>
-                                    <h5 class="card-title">Address</h5>
-                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
-                                    <h5 class="card-title">Activity Timeline</h5>
-                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
-                                </div>
-                            </div>
-                            <div class="card card-style">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-start align-content-center align-items-center flex-row"> 
-                                        <img src="assets/img/icons/general.svg" class="float-left img-user-icons">
-                                        <h5 class="card-title">Nursing home - Warm heart</h5>
-                                    </div>
-                                    <br>
-                                    <h5 class="card-title">Address</h5>
-                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
-                                    <h5 class="card-title">Activity Timeline</h5>
-                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
-                                </div>
-                            </div>
-                            <div class="card card-style">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-start align-content-center align-items-center flex-row"> 
-                                        <img src="assets/img/icons/general.svg" class="float-left img-user-icons">
-                                        <h5 class="card-title">Nursing home - Warm heart</h5>
-                                    </div>
-                                    <br>
-                                    <h5 class="card-title">Address</h5>
-                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
-                                    <h5 class="card-title">Activity Timeline</h5>
-                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
-                                </div>
-                            </div>
-                            <div class="card card-style">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-start align-content-center align-items-center flex-row"> 
-                                        <img src="assets/img/icons/general.svg" class="float-left img-user-icons">
-                                        <h5 class="card-title">Nursing home - Warm heart</h5>
-                                    </div>
-                                    <br>
-                                    <h5 class="card-title">Address</h5>
-                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
-                                    <h5 class="card-title">Activity Timeline</h5>
-                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
-                                </div>
-                            </div>
-                            <div class="card card-style">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-start align-content-center align-items-center flex-row"> 
-                                        <img src="assets/img/icons/general.svg" class="float-left img-user-icons">
-                                        <h5 class="card-title">Nursing home - Warm heart</h5>
-                                    </div>
-                                    <br>
-                                    <h5 class="card-title">Address</h5>
-                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
-                                    <h5 class="card-title">Activity Timeline</h5>
-                                    <p class="card-text">110, Sejong-daero,Jung-gu,<br>Seoul 045224 South Korea</p>
-                                </div>
-                            </div>
-                        
-                    </div>
+                    <div class="tab-content content-data h-100 d-flex justify-content-center align-content-center align-items-center flex-column" id="myTabContent ">
+                        <div class="text-nodata">The student has not allowed access to view the activity</div>
+                        <img class="image-nodata" src="assets/img/notdata.png" alt="">
+                      </div>
                 </div>
             </div>
         </div>

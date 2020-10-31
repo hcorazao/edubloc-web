@@ -10,6 +10,10 @@ const routes: Routes = [
     path: 'parents',
     loadChildren: () => import('./parents-view-student/parents-view-student.module').then ( m => m.ParentsViewStudentModule)
   },
+  {
+    path: 'parents-nodata',
+    loadChildren: () => import('./parents-view-student-nodata/parents-view-student-nodata.module').then ( m => m.ParentsViewStudentNodataModule)
+  },
 ];
 
 @NgModule({

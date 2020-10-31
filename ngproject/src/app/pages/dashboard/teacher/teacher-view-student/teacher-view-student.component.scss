@@ -179,7 +179,7 @@ nav.custom-nav-app ul.navbar-nav li{
 .jumbotron.classes-jumbotron {
     width: 100%;
     margin: 0 auto !important;
-    padding: 10px 25px !important;
+    padding: 10px 0px !important;
 }
 .hdr-rt-section svg{
     width: 24px;
@@ -212,6 +212,9 @@ nav.custom-nav-app ul.navbar-nav li.active > a {
 }
 .panel-heading, .card-body {
     border-bottom: 1px solid #EBEFF2;
+}
+.header-config {
+    margin: 0 10vw !important;
 }
 @media screen and (max-width:991px){
     .active-link {

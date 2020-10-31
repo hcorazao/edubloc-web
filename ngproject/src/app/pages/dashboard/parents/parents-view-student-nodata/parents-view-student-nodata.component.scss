@@ -1,6 +1,6 @@
 $white: #ffffff;
-$gris: #f1f1f1;
 $Accent-blue: #175FFf;
+$gris: #f1f1f1;
 $Accent-fiolet: #F6A521;
 $Logo-gradient: linear-gradient(226.27deg, #EAA675 0%, #EA7D75 100%);
 html,
@@ -9,6 +9,7 @@ body {
     flex-direction: column;
     background-color: $gris;
     width: 100vw;
+    height:  100vh !important;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
 }
@@ -16,7 +17,6 @@ body {
 //navbar *************************************************************
 .navbar-space-style {
     display: flex;
-    padding: 0 16em;
 }
 
 .active-link {
@@ -33,26 +33,28 @@ a.nav-link {
     text-decoration: none;
     color: $white;
 }
-
+nav.custom-nav-app ul.navbar-nav li > a {
+    border-top: 4px solid transparent;
+}
+nav.custom-nav-app ul.navbar-nav li.active > a {
+    border-top: 4px solid #ffffff;
+}
+nav.custom-nav-app ul.navbar-nav li{
+    margin:0 30px;
+}
 // jumbotron classes *************************************************
 div.jumbotron.classes-jumbotron {
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 5px 0 5px 0;
-    margin: 0 16em 0 16em;
+    margin: 0 40px 0 40px;
 }
-.calendar-style {
-    background-image: url('../../../../../assets/img/icons/calendar.svg');
-    background-repeat: no-repeat;
-    background-position: 12px;
-    padding-left: 1.9rem !important;
-    width: 158px !important;
-}
+
 .items-jumbotron-row-styles {
     display: flex;
+    vertical-align: middle;
     align-content: center;
     align-items: center;
-    justify-content: space-evenly;
 }
 
 .justify-content-jumbotron-date {
@@ -76,7 +78,13 @@ a.a-jumbotron {
     text-decoration: none;
     color: black;
 }
-
+.calendar-style {
+    background-image: url('../../../../../assets/img/icons/calendar.svg');
+    background-repeat: no-repeat;
+    background-position: 12px;
+    padding-left: 1.9rem !important;
+    width: 158px !important;
+}
 .form-line-bottom {
     border-bottom: #000000 solid 1px;
     border-radius: 1PX;
@@ -91,6 +99,7 @@ a.a-jumbotron {
     background-color: #34A853;
     border: none;
 }
+
 // modal *************************************************************
 .modal-header {
     display: flex;
@@ -118,12 +127,16 @@ a.a-jumbotron {
     background-color: #F46565;
     border: none;
 }
-
+nav.custom-nav-app {
+    padding: 0;
+}
 // card user ***********************************************************
 div.card-group.align-items-center {
     padding: 10px 0 10px 0;
 }
-
+.card-title {
+    margin-bottom: 0rem !important;
+}
 img.float-left.rounded-circle {
     width: 50px;
     margin: 0 10px 0 0;
@@ -159,9 +172,8 @@ div.card-group.d-flex.usercard-collapse-1 {
 
 // card ****************************************************************
 .cards-space-styles {
-    padding: 10px 10px 0 0;
+    padding: 0 10px 10px 0;
 }
-
 .profile-general {
     width: 300px;
 }
@@ -170,30 +182,41 @@ div.card-group.d-flex.usercard-collapse-1 {
     margin: 0 10px 10px 0;
 
 }
+
 .container-general {
-    margin-left: 6vw;
+    margin-left: 3vw;
 }
-.align-container {
-    margin: 0 0 0 10em
-}
-.panel-heading, .card-body {
-    border-bottom: 1px solid #EBEFF2;
-}
-@media screen and (max-width:1200px){
-    .navbar-space-style {
-        padding: 0 5em;
-    }
-    div.jumbotron.classes-jumbotron {
-        margin: 0 5em 0 5em;
-    }
-    .align-container {
-        margin: 0 0 0 0em
-    }
-    .card-style {
-        width: 240px;
-    }
+.activities-general {
+    width: 158px;
 }
 
+.image-nodata {
+    width: 347px;
+    height: 332px;
+    margin-top: 10px;
+}
+.text-nodata {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+    line-height: 34px;
+    letter-spacing: 0.337647px;
+    color: rgba(17, 7, 37, 0.6);
+}
+
+.header-navbar {
+    margin: 0 14vw;
+}
+@media screen and (max-width:990px){
+
+    .profile-general {
+        width: 95%;
+    } 
+    .text-nodata {
+        margin-top: 5vw;
+    }
+}
 @media screen and (max-width:767px){
     .cards-space-styles {
         margin: 0 0 10px 0;
@@ -203,43 +226,46 @@ div.card-group.d-flex.usercard-collapse-1 {
         margin-top: 10px;
     }
     .profile-general {
-        width:77vw;
+        width: 100%;
     }
     .container-general {
-        margin-left: 9vw;
-    }
-    div.jumbotron.classes-jumbotron {
-        margin: 0 4em 0 5em;
-    }
-    .navbar-space-style {
-        padding: 0 5em;
-    }
-    .align-container {
-        margin: 0 0 0 1vw
+        margin-left: 0vw;
     }
 }
+.panel-heading, .card-body {
+    border-bottom: 1px solid #EBEFF2;
+}
 @media screen and (max-width:575px){
+    .header-navbar {
+        margin: 0 2vw;
+    }
+    .btn-color-end-div {
+        justify-content: center;
+    }
+    .text-nodata {
+        margin-top: 10vw;
+    }
+    .image-nodata {
+        width: 36vw;
+        height: 34.4vw;
+        margin-top: 10vw;
+    }
     .cards-space-styles {
         padding: 10px 10px 0px 0;
 
     }  
     .card-style {
-        width: 96% !important;
+        width: 100% !important;
         margin: 10px 0 0px 0 !important;
     } 
-    .container-general {
-        margin-left: 0vw;
-    }
+    
     .profile-general {
         width: 96%;
     }
-    .navbar-space-style {
-        padding: 0 1em;
+    .container-general {
+        margin-left: 0vw;
     }
-    div.jumbotron.classes-jumbotron {
-        margin: 0 1em 0 1em;
-    }
-    .align-container {
-        margin: 0 0 0 0vw
+    .activities-general {
+        width: 80%;
     }
 }

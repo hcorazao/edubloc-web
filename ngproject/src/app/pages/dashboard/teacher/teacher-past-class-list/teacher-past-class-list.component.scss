@@ -7,8 +7,8 @@ html,
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     width: 100vw;
+    height: 100vh !important;
     margin: 0 0 0 0;
     background-color: $gris;
     padding: 0 0 0 0;
@@ -129,6 +129,9 @@ a.a-view {
 }
 .navbar-personal {
     padding: 0 11vw 0 11vw !important;
+}
+.personal-table {
+    width: 170px;
 }
 @media screen and (max-width:1200px){
     .items-jumbotron-row-styles {

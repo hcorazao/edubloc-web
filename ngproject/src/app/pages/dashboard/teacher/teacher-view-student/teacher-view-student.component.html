@@ -42,7 +42,7 @@
         
         <div class="jumbotron classes-jumbotron">
             <div class="container">
-                <div class="row d-flex justify-content-around align-content-center align-items-center flex-wrap ">
+                <div class="d-flex justify-content-around w-100 align-content-center align-items-center flex-wrap ">
                     <div>
                         <h5>
                             <a class="a-jumbotron" (click)="gotoTeacherViewClass()" style="cursor:pointer;" routerLinkActive="active-link">
@@ -52,28 +52,31 @@
                             </a>
                         </h5>
                     </div>
-                    <div style="width: 140px !important;" class="my-2">
-                        <button type="button" class="btn btn-light dropdown-toggle block-size-style" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                            Activities
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="d-flex align-content-center align-items-center justify-content-center flex-wrap header-config">
+                        <div style="width: 140px !important;" class="my-2 mr-5">
+                            <button type="button" class="btn btn-light dropdown-toggle block-size-style" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                Activities
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                        <div style="width: 245px !important;" class="d-flex justify-content-center align-items-center align-content-center flex-wrap">
+                                <div style="width: 45px !important;" class="my-2 text-center">From</div>
+                                <div class="form-group col justify-content-jumbotron-date">
+                                    <input class="form-control calendar-style mr-sm-2" type="search" placeholder="YYYY/MM/DD" aria-label="Search">
+                                </div>
+                        </div>
+                        <div style="width: 245px !important;" class="d-flex justify-content-center align-items-center align-content-center flex-wrap">
+                                <div style="width: 45px !important;" class="my-2 text-center">To</div>
+                                <div class="form-group col justify-content-jumbotron-date">
+                                    <input class="form-control calendar-style mr-sm-2" type="search" placeholder="YYYY/MM/DD" aria-label="Search">
+                                </div>
                         </div>
                     </div>
-                    <div style="width: 245px !important;" class="d-flex justify-content-center align-items-center align-content-center flex-wrap flex-row">
-                            <div style="width: 45px !important;" class="my-2 text-center">From</div>
-                            <div class="form-group col justify-content-jumbotron-date">
-                                <input class="form-control calendar-style mr-sm-2" type="search" placeholder="YYYY/MM/DD" aria-label="Search">
-                            </div>
-                    </div>
-                    <div style="width: 245px !important;" class="d-flex justify-content-center align-items-center align-content-center flex-wrap flex-row">
-                            <div style="width: 45px !important;" class="my-2 text-center">To</div>
-                            <div class="form-group col justify-content-jumbotron-date">
-                                <input class="form-control calendar-style mr-sm-2" type="search" placeholder="YYYY/MM/DD" aria-label="Search">
-                            </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
